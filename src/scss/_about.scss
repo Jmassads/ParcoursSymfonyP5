@@ -1,0 +1,36 @@
+.ct-logo {
+  max-width: 160px;
+}
+
+.ct-logo svg {
+  max-width: 160px;
+  height: 60px;
+}
+
+.splide__arrow {
+  border-radius: 2px;
+  border: 2px solid #f7484e;
+  opacity: 1;
+  background: white;
+}
+
+.splide__arrow--prev {
+  left: 5px;
+
+  svg {
+    fill: #f7484e;
+  }
+}
+
+.splide__arrow--next {
+  right: 5px;
+
+
+  svg {
+    fill: #f7484e;
+  }
+}
+
+.splide__slide img {
+  margin: 0 auto;
+}
