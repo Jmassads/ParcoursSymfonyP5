@@ -1,6 +1,20 @@
 <?php include 'header.php';?>
 
+
+
 <main class="pt-24">
+
+    <?php
+    $bdd = new PDO("mysql:host=localhost;dbname=mon_site;charset=utf8", "root", "root");
+    $stmt = $bdd->prepare("SELECT * FROM articles");
+    $stmt->execute();
+    $results = $stmt-> fetchAll();
+    $stmt->closeCursor();
+
+    echo "<pre>";
+    print_r($results);
+    echo "</pre>";
+    ?>
 
 <!--    ABOUT SECTION-->
     <section class="px-4 py-4" id="about">
