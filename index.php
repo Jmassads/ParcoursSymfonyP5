@@ -1,19 +1,20 @@
 <?php include 'header.php';?>
-
+<?php include 'pdo.php';?>
 
 
 <main class="pt-24">
 
     <?php
-    $bdd = new PDO("mysql:host=localhost;dbname=mon_site;charset=utf8", "root", "root");
+    $bdd = connexionPDO();
     $stmt = $bdd->prepare("SELECT * FROM articles");
     $stmt->execute();
-    $results = $stmt-> fetchAll();
+    $results = $stmt-> fetchAll(PDO::FETCH_ASSOC);
     $stmt->closeCursor();
 
     echo "<pre>";
     print_r($results);
     echo "</pre>";
+
     ?>
 
 <!--    ABOUT SECTION-->
