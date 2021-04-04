@@ -1,9 +1,5 @@
 <?php
 
-const HOST_NAME = "localhost";
-const DATABASE_NAME = "mon_site";
-const USER_NAME = "root";
-const PASSWORD = "root";
 
 function connexionPDO(){
     try{
@@ -12,7 +8,7 @@ function connexionPDO(){
         return $bdd;
 
     } catch (PDOException $e){
-        $message = "Erreur PDO avec les message : " . $e->getMessage();
+        $message = "Erreur PDO avec le message : " . $e->getMessage();
         die($message);
     }
 }

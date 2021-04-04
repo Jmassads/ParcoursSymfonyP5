@@ -1,5 +1,6 @@
 <?php include 'header.php';?>
-<?php include 'pdo.php';?>
+<?php require_once 'config.php';?>
+<?php require_once 'pdo.php';?>
 
 
 <main class="pt-24">
