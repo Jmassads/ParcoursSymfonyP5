@@ -1,24 +1,6 @@
-<?php include 'header.php'; ?>
-<?php require_once 'config.php'; ?>
-<?php require_once 'pdo.php'; ?>
-
+<?php include 'views/header.php';?>
 
 <main class="pt-24">
-
-    <?php
-    $bdd = connexionPDO();
-    $req = 'SELECT * FROM articles 
-    INNER JOIN categories on articles.category_id = categories.category_id
-    INNER JOIN users on articles.user_id = users.user_id 
-    INNER JOIN Image on articles.id_image = Image.id_image
-    where article_id = :idArticle
-    ';
-    $stmt = $bdd->prepare($req);
-    $stmt->bindValue(":idArticle",$_GET['idArticle']);
-    $stmt->execute();
-    $article = $stmt->fetch(PDO::FETCH_ASSOC);
-    $stmt->closeCursor();
-    ?>
 
     <section class="px-4">
         <div class="flex flex-col sm:flex-row flex-wrap items-center">
@@ -30,7 +12,7 @@
             </div>
         </div>
         <div class="my-10">
-           <?php echo $article['article_content'];?>
+            <?php echo $article['article_content'];?>
         </div>
         <div class="mt-6 flex items-center">
             <div class="flex-shrink-0">
@@ -53,8 +35,8 @@
                 <h2 class="px-4 pt-3 pb-2 text-gray-800 text-lg">Ajouter un commentaire</h2>
                 <div class="w-full md:w-full px-3 mb-2 mt-2">
                     <textarea
-                            class="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-full h-20 py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white"
-                            name="body" placeholder="Écrivez votre commentaire" required=""></textarea>
+                        class="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-full h-20 py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white"
+                        name="body" placeholder="Écrivez votre commentaire" required=""></textarea>
                 </div>
                 <div class="w-full md:w-full flex items-start md:w-full px-3">
                     <div class="flex items-start w-1/2 text-gray-700 px-2 mr-auto">
@@ -71,5 +53,4 @@
     </section>
 </main>
 
-<?php include 'footer.php'; ?>
-
+<?php include 'views/footer.php';?>

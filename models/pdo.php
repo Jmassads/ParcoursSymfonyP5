@@ -1,6 +1,5 @@
 <?php
 
-
 function connexionPDO(){
     try{
         $bdd = new PDO("mysql:host=".HOST_NAME.";dbname=".DATABASE_NAME .";charset=utf8", USER_NAME, PASSWORD);

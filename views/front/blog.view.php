@@ -1,32 +1,11 @@
-<?php include 'header.php'; ?>
-<?php require_once 'config.php'; ?>
-<?php require_once 'pdo.php'; ?>
-
+<?php include 'views/header.php';?>
 
 <main class="pt-24">
-
-    <?php
-    $bdd = connexionPDO();
-    $stmt = $bdd->prepare("
-       SELECT * FROM articles
-       INNER JOIN categories on articles.category_id = categories.category_id
-       INNER JOIN users on articles.user_id = users.user_id 
-       INNER JOIN Image on articles.id_image = Image.id_image;
-       ");
-    $stmt->execute();
-    $articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    $stmt->closeCursor();
-
-
-    ?>
     <section id="blog" class="items-center justify-between mx-auto px-4 py-12 lg:py-16 xl:py-24 2xl:py-32">
         <h2 class="text-4xl font-semibold text-tart-orange">Mon blog<span
-                    class="text-black">.</span></h2>
+                class="text-black">.</span></h2>
         <div class="block text-center py-6">
-            <p class="w-full md:w-2/3 mr-auto ml-auto text-grey-darker text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores delectus dolor maxime possimus
-                quaerat ullam voluptas! Aliquid expedita fugiat nihil omnis pariatur perferendis repellat repellendus
-                similique. Aut quasi ratione saepe?
+            <p class="w-full md:w-2/3 mr-auto ml-auto text-grey-darker text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores delectus dolor maxime possimus quaerat ullam voluptas! Aliquid expedita fugiat nihil omnis pariatur perferendis repellat repellendus similique. Aut quasi ratione saepe?
             </p>
         </div>
         <pre>
@@ -58,7 +37,7 @@
                             </div>
                         </div>
                         <div class="cursor-pointer mt-10 font-semibold flex items-center hover:text-tart-orange">
-                            <a href="article.php?idArticle=<?php echo $article['article_id'] ?>" class="mr-2 ">Lire la suite</a>
+                            <a href="<?= URL;?>article&idArticle=<?=$article['article_id'];?>" class="mr-2 ">Lire la suite</a>
                             <ion-icon name="arrow-forward"></ion-icon>
                         </div>
                     </div>
@@ -70,5 +49,4 @@
     </section>
 </main>
 
-<?php include 'footer.php'; ?>
-
+<?php include 'views/footer.php';?>
