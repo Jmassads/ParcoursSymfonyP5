@@ -1,23 +1,12 @@
 <?php include 'header.php'; ?>
 <?php require_once 'config.php'; ?>
-<?php require_once 'pdo.php'; ?>
+<?php require_once 'article.dao.php'; ?>
 
 
 <main class="pt-24">
 
     <?php
-    $bdd = connexionPDO();
-    $req = 'SELECT * FROM articles 
-    INNER JOIN categories on articles.category_id = categories.category_id
-    INNER JOIN users on articles.user_id = users.user_id 
-    INNER JOIN Image on articles.id_image = Image.id_image
-    where article_id = :idArticle
-    ';
-    $stmt = $bdd->prepare($req);
-    $stmt->bindValue(":idArticle",$_GET['idArticle']);
-    $stmt->execute();
-    $article = $stmt->fetch(PDO::FETCH_ASSOC);
-    $stmt->closeCursor();
+    $article = getArticleById($_GET['idArticle']);
     ?>
 
     <section class="px-4">
