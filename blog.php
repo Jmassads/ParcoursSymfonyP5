@@ -58,7 +58,7 @@
                             </div>
                         </div>
                         <div class="cursor-pointer mt-10 font-semibold flex items-center hover:text-tart-orange">
-                            <a href="article.php" class="mr-2 ">Lire la suite</a>
+                            <a href="article.php?idArticle=<?php echo $article['article_id'] ?>" class="mr-2 ">Lire la suite</a>
                             <ion-icon name="arrow-forward"></ion-icon>
                         </div>
                     </div>
