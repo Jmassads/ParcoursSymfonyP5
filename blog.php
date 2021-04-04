@@ -1,45 +1,4 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>starter-2020</title>
-    <link rel="shortcut icon" type="image/ico" href="./favicon.ico">
-    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./dist/style.css">
-</head>
-<body>
-
-<!--nav-->
-<header class="bg-white shadow fixed z-50 w-full">
-    <nav class="py-4 px-4 flex flex-wrap items-center justify-between">
-        <div>
-            <a href=""
-               class="text-4xl no-underline font-bold"
-               rel="me">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-prompt inline" width="24"
-                     height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                     stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M0 0h24v24H0z" stroke="none"></path>
-                    <polyline points="5 7 10 12 5 17"></polyline>
-                    <line x1="13" y1="17" x2="19" y2="17"></line>
-                </svg>
-                Julia Assad
-            </a>
-        </div>
-        <div class="nav-down text-right md:inline-flex hidden">
-            <a href=""
-               class="block lg:inline-block lg:mt-0 font-bold no-underline text-xs uppercase pl-4">À
-                propos</a>
-            <a href=""
-               class="block lg:inline-block lg:mt-0 font-bold no-underline text-xs uppercase pl-4">Projets</a>
-            <a href=""
-               class="block lg:inline-block lg:mt-0 font-bold no-underline text-xs uppercase pl-4 pr-4">Blog</a>
-            <a href=""
-               class="block lg:inline-block lg:mt-0 font-bold no-underline text-xs uppercase pl-4 border-l">Contact</a>
-        </div>
-    </nav>
-</header>
+<?php include 'header.php';?>
 
 <main class="pt-24">
     <section id="blog" class="items-center justify-between mx-auto px-4 py-12 lg:py-16 xl:py-24 2xl:py-32">
@@ -76,7 +35,7 @@
                         </div>
                     </div>
                     <div class="cursor-pointer mt-10 font-semibold flex items-center hover:text-tart-orange">
-                        <a href="article.html" class="mr-2 ">Lire la suite</a>
+                        <a href="article.php" class="mr-2 ">Lire la suite</a>
                         <ion-icon name="arrow-forward"></ion-icon>
                     </div>
                 </div>
@@ -105,7 +64,7 @@
 
                     </div>
                     <div class="cursor-pointer mt-10 font-semibold flex items-center hover:text-tart-orange">
-                        <a href="article.html" class="mr-2 ">Lire la suite</a>
+                        <a href="article.php" class="mr-2 ">Lire la suite</a>
                         <ion-icon name="arrow-forward"></ion-icon>
                     </div>
                 </div>
@@ -133,7 +92,7 @@
                         </div>
                     </div>
                     <div class="cursor-pointer mt-10 font-semibold flex items-center hover:text-tart-orange">
-                        <a href="article.html" class="mr-2 ">Lire la suite</a>
+                        <a href="article.php" class="mr-2 ">Lire la suite</a>
                         <ion-icon name="arrow-forward"></ion-icon>
                     </div>
                 </div>
@@ -144,11 +103,5 @@
     </section>
 </main>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-<script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
-<script src="./dist/main.js"></script>
+<?php include 'footer.php';?>
 
-</body>
-</html>
