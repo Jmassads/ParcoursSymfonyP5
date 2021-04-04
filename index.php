@@ -5,19 +5,6 @@
 
 <main class="pt-24">
 
-    <?php
-    $bdd = connexionPDO();
-    $stmt = $bdd->prepare("SELECT * FROM articles");
-    $stmt->execute();
-    $results = $stmt-> fetchAll(PDO::FETCH_ASSOC);
-    $stmt->closeCursor();
-
-    echo "<pre>";
-    print_r($results);
-    echo "</pre>";
-
-    ?>
-
 <!--    ABOUT SECTION-->
     <section class="px-4 py-4" id="about">
         <div class="relative z-20 bg-white md:flex justify-between">
