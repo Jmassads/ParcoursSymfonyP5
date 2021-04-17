@@ -23,11 +23,17 @@ try {
             case "login":
                 getPageLogin();
                 break;
+            case "admin":
+                getPageAdmin();
+                break;
+            case "error404":
+            default: throw new Exception("La page n'existe pas");
         }
     } else {
         getPageAccueil();
     }
 } catch (Exception $e) {
-
+    $errorMessage = $e->getMessage();
+    require "views/commons/erreur.view.php";
 }
 

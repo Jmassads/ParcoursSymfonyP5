@@ -25,6 +25,7 @@
     "@tabler/icons": "^1.39.1",
     "@tailwindcss/postcss7-compat": "^2.0.4",
     "autoprefixer": "^9.8.6",
+    "bootstrap": "^5.0.0-beta3",
     "jquery": "^3.4.1",
     "postcss": "^7.0.35",
     "slick-carousel": "^1.8.1",

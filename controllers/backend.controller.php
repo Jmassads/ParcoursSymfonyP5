@@ -8,7 +8,17 @@ function getPageLogin()
 {
 
     if (isset($_SESSION['acces']) && !empty($_SESSION['acces']) && $_SESSION['acces'] === "admin") {
-        header("Location: admin");
+        if($_COOKIE[COOKIE_PROTECT] === $_SESSION[COOKIE_PROTECT]){
+            $ticket = session_id().microtime().rand(0, 99999);
+            $ticket = hash("sha512, $ticket");
+            setcookie(COOKIE_PROTECT, $ticket, time() + (60 * 20));
+            $_SESSION[COOKIE_PROTECT] = $ticket;
+            header("Location: admin");
+        } else {
+            session_destroy();
+            throw new Exception("Vous n'avez pas le droit d'être là");
+        }
+
     }
     $data = [
         'email_err' => '',
@@ -17,11 +27,15 @@ function getPageLogin()
 
     if (isset($_POST['user_email']) && !empty($_POST['user_email']) &&
         isset($_POST['password']) && !empty($_POST['password'])) {
-        $login = Securite::secureHTML($_POST['user_email']);
+        $email = Securite::secureHTML($_POST['user_email']);
         $password = Securite::secureHTML($_POST['password']);
-        if (findUserByEmail($login)) {
-            if (isConnexionValid($login, $password)) {
+        if (findUserByEmail($email)) {
+            if (isConnexionValid($email, $password)) {
                 $_SESSION['acces'] = "admin";
+                $ticket = session_id().microtime().rand(0, 99999);
+                $ticket = hash("sha512, $ticket");
+                setcookie(COOKIE_PROTECT, $ticket, time() + (60 * 20));
+                $_SESSION[COOKIE_PROTECT] = $ticket;
                 header("Location: admin");
             } else {
                 $data['password_err'] = 'mot de passe invalide';
@@ -33,6 +47,14 @@ function getPageLogin()
     }
 
     require_once "views/back/login.view.php";
+}
+
+function getPageAdmin(){
+    if(isset($_POST['deconnexion']) && $_POST['deconnexion'] === "true"){
+        session_destroy();
+        header("Location: accueil");
+    }
+    require_once "views/back/adminAccueil.view.php";
 }
 
 

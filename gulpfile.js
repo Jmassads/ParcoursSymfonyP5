@@ -19,12 +19,6 @@ gulp.task("sassTask", function() {
         .src(path.src_sass)
         .pipe(sourcemaps.init()) // initialize sourcemaps first
         .pipe(sass().on('error', sass.logError))
-
-        .pipe(postcss([
-            autoprefixer(), cssnano(),
-            require('tailwindcss'),
-            tailwindcss('tailwind.config.js'),
-        ])) // PostCSS plugins
         .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
         .pipe(gulp.dest('./dist'))
     // .pipe(browserSync.stream());
