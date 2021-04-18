@@ -1,4 +1,4 @@
-<?php include 'views/header.php';?>
+<?php include 'views/front/header.php';?>
 
 <main class="pt-24">
 
@@ -53,4 +53,4 @@
     </section>
 </main>
 
-<?php include 'views/footer.php';?>
+<?php include 'views/front/footer.php';?>

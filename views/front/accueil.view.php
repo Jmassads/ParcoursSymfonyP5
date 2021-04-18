@@ -1,4 +1,4 @@
-<?php include 'views/header.php'; ?>
+<?php include 'views/front/header.php'; ?>
 
 
         <!--    ABOUT SECTION-->
@@ -486,4 +486,4 @@
 
 
 
-<?php include 'views/footer.php'; ?>
+<?php include 'views/front/footer.php'; ?>

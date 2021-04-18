@@ -3,7 +3,7 @@
 <footer class="footer bg-white px-4">
     <div class="row">
         <div class="mt-8 my-2">
-            <a href="login">Connexion</a>
+            <a href="<?php echo URL ?>login">Connexion</a>
         </div>
     </div>
     <div class="mx-auto">

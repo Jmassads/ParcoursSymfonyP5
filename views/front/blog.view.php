@@ -1,4 +1,4 @@
-<?php include 'views/header.php';?>
+<?php include 'views/front/header.php';?>
 
 
     <section id="blog" class="px-4 py-4">
@@ -48,4 +48,4 @@
     </section>
 
 
-<?php include 'views/footer.php';?>
+<?php include 'views/front/footer.php';?>

@@ -3,6 +3,7 @@
 require_once "models/article.dao.php";
 require_once "models/users.dao.php";
 require_once 'config/config.php';
+require_once "dist/utile/formatage.php";
 
 function getPageLogin()
 {
@@ -56,5 +57,29 @@ function getPageAdmin(){
     }
     require_once "views/back/adminAccueil.view.php";
 }
+
+function getPageAdminArticles(){
+
+    if(isset($_POST['articleTitle']) && !empty($_POST['articleTitle']) &&
+        isset($_POST['articleExcerpt']) && !empty($_POST['articleExcerpt']) &&
+        isset($_POST['articleContent']) && !empty($_POST['articleContent'])
+    ) {
+        $date = date("Y-m-d H:i:s", time());
+        if(insertArticleIntoBD($_POST['articleTitle'], $_POST['articleExcerpt'], $_POST['articleContent'], $date, $date, $_POST['adminUser'], $_POST['articleCategory'], 2)){
+            $alert = "La création de l'article est effectuée";
+            $alertType = ALERT_SUCCESS;
+        }else {
+            $alert = "La création de l'article na pas fonctionnée";
+            $alertType = ALERT_DANGER;
+
+        }
+    }
+
+    $adminUsers = getAdminUsers();
+    $categoriesArticle = getCategoriesArticle();
+    require_once "views/back/adminArticles.view.php";
+}
+
+
 
 
