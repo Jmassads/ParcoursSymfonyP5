@@ -29,6 +29,13 @@ try {
             case "adminArticles":
                 getPageAdminArticles();
                 break;
+            case "genererArticlesAdminAjout": getPageAdminArticlesAjout();
+                break;
+            case "genererArticlesAdminModif": getPageAdminArticlesModif();
+                break;
+            case "test":
+                getTest();
+                break;
             case "error404":
             default: throw new Exception("La page n'existe pas");
         }

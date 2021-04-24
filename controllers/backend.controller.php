@@ -58,28 +58,82 @@ function getPageAdmin(){
     require_once "views/back/adminAccueil.view.php";
 }
 
-function getPageAdminArticles(){
+function getPageAdminArticles($require ="", $alert="",$alertType="",$data=""){
+    $adminUsers = getAdminUsers();
+    $categoriesArticle = getCategoriesArticle();
+    require_once "views/back/adminArticles.view.php";
+    if($require !=="") require_once $require;
+}
 
+function getPageAdminArticlesAjout(){
+    $alert = "" ;
+    $alertType="";
+    $adminUsers = getAdminUsers();
+    $categoriesArticle = getCategoriesArticle();
     if(isset($_POST['articleTitle']) && !empty($_POST['articleTitle']) &&
         isset($_POST['articleExcerpt']) && !empty($_POST['articleExcerpt']) &&
         isset($_POST['articleContent']) && !empty($_POST['articleContent'])
     ) {
+        $articleTitle = Securite::secureHTML($_POST['articleTitle']);
+        $articleExcerpt = Securite::secureHTML($_POST['articleExcerpt']);
+        $articleContent = Securite::secureHTML($_POST['articleContent']);
+        $category = $_POST['articleCategory'];
+        $adminUser = $_POST['adminUser'];
         $date = date("Y-m-d H:i:s", time());
-        if(insertArticleIntoBD($_POST['articleTitle'], $_POST['articleExcerpt'], $_POST['articleContent'], $date, $date, $_POST['adminUser'], $_POST['articleCategory'], 2)){
+
+        if(insertArticleIntoBD($articleTitle, $articleExcerpt, $articleContent, $date, $date, $adminUser, $category, 2)){
             $alert = "La création de l'article est effectuée";
             $alertType = ALERT_SUCCESS;
         }else {
+            throw new Exception("L'insertion en BD n'a pas fonctionné");
             $alert = "La création de l'article na pas fonctionnée";
             $alertType = ALERT_DANGER;
 
         }
     }
-
-    $adminUsers = getAdminUsers();
-    $categoriesArticle = getCategoriesArticle();
-    require_once "views/back/adminArticles.view.php";
+    getPageAdminArticles("views/back/adminArticlesAjout.view.php", $alert,$alertType);
 }
 
+function getPageAdminArticlesModif(){
+    $alert = "";
+    $alertType="";
+    $data = [];
+    if(isset($_POST['etape']) && $_POST['etape'] >= 2) {
+        $categoryArticle = Securite::secureHTML($_POST['categoryArticle']);
+        $data['articles'] = getArticlesbyCategory((int) $categoryArticle);
+    }
+    if(isset($_POST['etape']) && $_POST['etape'] >= 3) {
+        $article = Securite::secureHTML($_POST['article']);
+        $data['article'] = getArticleById($article);
+    }
 
+    if(isset($_POST['etape']) && $_POST['etape'] >= 4) {
+
+        $articleTitle = Securite::secureHTML($_POST['articleTitle']);
+        $articleExcerpt = Securite::secureHTML($_POST['articleExcerpt']);
+        $articleContent = Securite::secureHTML($_POST['articleContent']);
+        $category = $_POST['categoryArticle'];
+        $adminUser = $_POST['adminUser'];
+        $date = date("Y-m-d H:i:s", time());
+        $articleid = $data['article']['article_id'];
+
+        if(updateArticleIntoBD($articleid, $articleTitle, $articleExcerpt, $articleContent, $date, $adminUser, $category)){
+            $alert = "La modification de l'article est effectuée";
+            $alertType = ALERT_SUCCESS;
+        }else {
+            throw new Exception("La modification en BD n'a pas fonctionné");
+            $alert = "La création de l'article na pas fonctionnée";
+            $alertType = ALERT_DANGER;
+
+        }
+
+    }
+    getPageAdminArticles("views/back/adminArticlesModif.view.php",$alert,$alertType,$data);
+}
+
+function getPageArticleAdminSup(){
+    $alert = "";
+    getPageNewsAdmin("views/back/adminNewsSup.view.php");
+}
 
 
