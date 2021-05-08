@@ -4,7 +4,6 @@
 <section class="px-4 py-4">
     <a class="btn btn-outline-blue" href="genererArticlesAdminAjout">Ajouter un article</a>
     <a class="btn btn-outline-info" href="genererArticlesAdminModif">modifier un article</a>
-    <a class="btn btn-tart-orange text-white" href="">Ajouter un article</a>
 </section>
 
 

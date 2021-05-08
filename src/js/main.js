@@ -9,11 +9,16 @@ $(document).ready(function() {
         } ).mount();
     }
 
-    // let hamburger = document.getElementById('hamburgerbtn');
-    //
-    // let mobileMenu = document.getElementById('mobileMenu');
-    //
-    // hamburger.addEventListener('click', function(){
-    //     mobileMenu.classList.toggle('active');
-    // });
+    var btnSup = document.querySelector("#btnSup");
+
+    btnSup.addEventListener("click", function (event) {
+        event.preventDefault();
+        alert('works');
+        var idArticle = document.querySelector("#article").value;
+        var TitleArticle = document.querySelector("#articleTitle").value;
+        if (confirm("Voulez-vous supprimer l'article " + idArticle + " - " + TitleArticle + " ?")) {
+            document.location.href = "genererArticlesAdminSup&sup=" + idArticle;
+        }
+    });
+
 });

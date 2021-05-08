@@ -109,6 +109,21 @@ function updateArticleIntoBD($articleid, $articleTitle, $articleExcerpt, $articl
     return false;
 }
 
+
+function deleteArticleFromBD($articleid){
+    $bdd = connexionPDO();
+    $req = '
+    delete from articles where article_id = :articleid
+    ';
+    $stmt = $bdd->prepare($req);
+    $stmt->bindValue(":articleid",$articleid,PDO::PARAM_INT);
+    $resultat = $stmt->execute();
+    $stmt->closeCursor();
+    if($resultat > 0) return true;
+    return false;
+}
+
+
 function test(){
     $bdd = connexionPDO();
     $req = 'INSERT INTO articles(article_title, article_excerpt, article_content, date_creation, date_modification, category_id, id_image, user_id) VALUES(\'test\', \'test\', \'test\', \'2021-02-14 20:31:14\', \'2021-02-14 20:31:14\', 2, 2, 1)';
@@ -119,16 +134,4 @@ function test(){
 
 }
 
-function test2(){
-    $bdd = connexionPDO();
-    $req = '
-    update articles
-    set article_title = \'julia\', article_excerpt = \'test\', article_content = \'test\', date_modification = \'2021-02-14 20:31:14\', user_id = 1, category_id= 1
-    where article_id = 1
-    ';
-    $stmt = $bdd->prepare($req);
-    $stmt->execute();
 
-    die('this is working');
-
-}

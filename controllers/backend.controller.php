@@ -131,9 +131,20 @@ function getPageAdminArticlesModif(){
     getPageAdminArticles("views/back/adminArticlesModif.view.php",$alert,$alertType,$data);
 }
 
-function getPageArticleAdminSup(){
+function getPageArticlesSup(){
     $alert = "";
-    getPageNewsAdmin("views/back/adminNewsSup.view.php");
+    $alertType="";
+    if(isset($_GET['sup'])){
+        try{
+            deleteArticleFromBD(Securite::secureHTML($_GET['sup']));
+            $alert = "La suppression de l'actualité a fonctionnée";
+            $alertType = ALERT_SUCCESS;
+        } catch(Exception $e){
+            $alert = "La suppression de l'actualité n'a pas fonctionnée";
+            $alertType = ALERT_DANGER;
+        }
+    }
+    getPageAdminArticles("",$alert,$alertType);
 }
 
 

@@ -1,4 +1,3 @@
-
 <section class="px-4">
     <h1 class="text-lg fw-bold text-center ">Modifier un article</h1>
     <form action="" method="POST" enctype="multipart/form-data">
@@ -59,11 +58,13 @@
             </div>
             <div class="mb-4">
                 <label for="articleExcerpt">Excerpt de l'article</label>
-                <textarea class="form-control" id="articleExcerpt" name="articleExcerpt" style="height: 100px"><?php echo $data['article']['article_excerpt']; ?></textarea>
+                <textarea class="form-control" id="articleExcerpt" name="articleExcerpt"
+                          style="height: 100px"><?php echo $data['article']['article_excerpt']; ?></textarea>
             </div>
             <div class="mb-4">
                 <label for="articleContent">Contenu de l'article</label>
-                <textarea class="form-control" id="articleContent" name="articleContent" style="height: 100px"><?php echo $data['article']['article_content']; ?></textarea>
+                <textarea class="form-control" id="articleContent" name="articleContent"
+                          style="height: 100px"><?php echo $data['article']['article_content']; ?></textarea>
             </div>
             <div class="mb-4">
                 <label for="articleImage" class="form-label">Image de l'article</label>
@@ -83,10 +84,10 @@
             </div>
             <div class="mb-4">
                 <input type="submit" class="btn btn-tart-orange text-white" value="Valider">
+                <button id="btnSup" class="btn btn-tart-orange text-white" href="">Supprimer</button>
             </div>
         </form>
     <?php } ?>
-
 
 </section>
 
