@@ -1,6 +1,5 @@
 <?php include 'views/front/header.php';?>
 
-
     <section id="blog" class="px-4 py-4">
         <h2 class="text-4xl text-tart-orange">Mon blog
             <span class="text-black">.</span>
@@ -15,28 +14,33 @@
                     <div class="border bg-white overflow-hidden h-100 p-3">
                         <div class="post-categories mb-2">
                             <a class="text-tart-orange"
-                               href=""><?php echo $article['category_title']; ?></a>
+                               href=""><?php echo $article->getCategoryTitle(); ?></a>
                         </div>
                         <div>
-                            <h3 class="text-lg mb-4"><?php echo $article['article_title']; ?></h3>
-                            <?php echo $article['article_excerpt']; ?>
+                            <h3 class="text-lg mb-4"><?php echo $article->getTitre(); ?></h3>
+                            <?php echo $article->getExcerpt(); ?>
                         </div>
                         <div class="mt-3 d-flex items-center">
                             <div class="">
                                 <img class="w-10 rounded-circle"
-                                     src="src/img/<?php echo $article['url_image'];?>"
+                                     src="<?php echo URL ?>src/img/avatar.png"
                                      alt="">
                             </div>
                             <div class="ms-3">
                                 <div class="text-sm" href="#">
-                                    <?php echo $article['user_firstname'] . ' ' . $article['user_lastname']; ?></div>
+                                    Julia Assad
+                                </div>
                                 <div class="text-sm">
-                                    <?php echo date('d-m-Y', strtotime($article['date_creation'])); ?>
+                                    <?php if(empty($article->getDateModification())):?>
+                                        <?php echo date('d-m-Y', strtotime($article->getDateCreation())); ?>
+                                    <?php else:?>
+                                        <?php echo date('d-m-Y', strtotime($article->getDateModification())); ?>
+                                    <?php endif;?>
                                 </div>
                             </div>
                         </div>
                         <div class="cursor-pointer mt-4 d-flex align-items-center">
-                            <a href="<?= URL;?>article&idArticle=<?=$article['article_id'];?>" class="d-block">Lire la suite</a>
+                            <a href="<?= URL ?>blog/article/<?= $article->getId(); ?>" class="d-block">Lire la suite</a>
                             <ion-icon class="ms-1" name="arrow-forward"></ion-icon>
                         </div>
                     </div>

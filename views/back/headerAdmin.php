@@ -30,10 +30,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="<?php echo URL ?>adminArticles">Articles</a>
+                <a class="nav-link active" aria-current="page" href="<?php echo URL ?>admin/articles">Articles</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Commentaires</a>
+                <a class="nav-link" href="<?php echo URL ?>admin/commentaires">Commentaires</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<?php echo URL ?>admin/users">Utilisateurs</a>
             </li>
         </ul>
         <img class="w-10 rounded-circle"

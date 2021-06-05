@@ -1,3 +1,5 @@
+<?php include 'views/back/headerAdmin.php';?>
+
 <section class="px-4">
     <h1 class="text-lg fw-bold text-center ">Modifier un article</h1>
     <form action="" method="POST" enctype="multipart/form-data">
@@ -15,6 +17,7 @@
     </form>
 
     <?php if (isset($_POST['etape']) && (int)$_POST['etape'] >= 2) { ?>
+        <?php print_r($articles);?>
         <form action="" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="etape" value="3">
             <input type="hidden" name="categoryArticle" value="<?php echo $_POST['categoryArticle'] ?>">
@@ -22,7 +25,7 @@
 
             <select name="article" id="article" class="form-control" onchange="submit()">
                 <option selected>Article...</option>
-                <?php foreach ($data['articles'] as $article) : ?>
+                <?php foreach ($articles as $article) : ?>
                     <option value="<?= $article['article_id'] ?>"
                         <?php if (isset($_POST['article']) && $_POST['article'] === $article['article_id']) echo "selected"; ?>>
                         <?= $article['article_id'] . " - " . $article['article_title'] ?>
@@ -71,13 +74,13 @@
                 <input class="form-control" type="file" name="articleImage" id="articleImage">
             </div>
             <div class="col-6 mb-4">
-                <label class="form-label" for="adminUser">Admin:</label>
-                <select class="form-select" name="adminUser" id="adminUser">
+                <label class="form-label" for="User">Admin:</label>
+                <select class="form-select" name="User" id="User">
                     <option selected>Admin...</option>
-                    <?php foreach ($adminUsers as $adminuser): ?>
-                        <option value="<?php echo $adminuser['user_id']; ?>"
-                            <?php if ($data['article']['user_id'] === $adminuser['user_id']) echo "selected"; ?>>
-                            <?php echo $adminuser['user_firstname'] . ' ' . $adminuser['user_lastname']; ?>
+                    <?php foreach ($users as $user): ?>
+                        <option value="<?php echo $user['user_id']; ?>"
+                            <?php if ($data['article']['user_id'] === $user['user_id']) echo "selected"; ?>>
+                            <?php echo $user['user_firstname'] . ' ' . $user['user_lastname']; ?>
                         </option>
                     <?php endforeach; ?>
                 </select>
@@ -90,4 +93,6 @@
     <?php } ?>
 
 </section>
+
+<?php include 'views/back/footerAdmin.php';?>
 

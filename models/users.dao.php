@@ -5,7 +5,7 @@ function findUserByEmail($user_email)
     $bdd = connexionPDO();
     $req = '
     SELECT * 
-    FROM adminusers 
+    FROM Users 
     where user_email = :user_email';
     $stmt = $bdd->prepare($req);
     $stmt->bindValue(":user_email", $user_email, PDO::PARAM_STR);
@@ -25,7 +25,7 @@ function getPasswordUser($user_email)
     $bdd = connexionPDO();
     $req = '
     SELECT * 
-    FROM adminusers 
+    FROM Users 
     where user_email = :user_email';
     $stmt = $bdd->prepare($req);
     $stmt->bindValue(":user_email", $user_email, PDO::PARAM_STR);

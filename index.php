@@ -1,48 +1,84 @@
 <?php
 session_start();
-require_once "controllers/frontend.controller.php";
-require_once "controllers/backend.controller.php";
-require_once "config/Securite.class.php";
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL ^ E_NOTICE);
 
-//$hash = password_hash('', PASSWORD_DEFAULT);
-//echo $hash;
+define("URL", str_replace("index.php", "", (isset($_SERVER['HTTPS']) ? "https" : "http") .
+    "://$_SERVER[HTTP_HOST]$_SERVER[PHP_SELF]"));
+
+require_once "config/Securite.class.php";
+require_once 'config/helper.php';
+
+require_once "controllers/frontend/FrontArticles.php";
+$articleController = new FrontArticles();
+
+
+require_once "controllers/backend/Articles.php";
+require_once "controllers/backend/Users.php";
+require_once "controllers/backend/Comments.php";
+$adminArticleController = new Articles();
+$adminCommentController = new Comments();
+$userController = new Users;
+
 
 try {
-    if (isset($_GET['page']) && !empty($_GET['page'])) {
-        $page = Securite::secureHTML($_GET['page']);
-        switch ($page) {
-            case "accueil":
-                getPageAccueil();
-                break;
-            case "blog":
-                getPageBlog();
-                break;
-            case "article":
-                getPageArticle();
-                break;
-            case "login":
-                getPageLogin();
-                break;
-            case "admin":
-                getPageAdmin();
-                break;
-            case "adminArticles":
-                getPageAdminArticles();
-                break;
-            case "genererArticlesAdminAjout": getPageAdminArticlesAjout();
-                break;
-            case "genererArticlesAdminModif": getPageAdminArticlesModif();
-                break;
-            case "genererArticlesAdminSup": getPageArticlesSup();
-                break;
-            case "error404":
-            default: throw new Exception("La page n'existe pas");
-        }
+    if (empty($_GET['page'])) {
+        require "views/front/accueil.view.php";
     } else {
-        getPageAccueil();
+        $url = explode("/", filter_var($_GET['page']), FILTER_SANITIZE_URL);
+        switch ($url[0]) {
+            case "accueil" :
+                require "views/front/accueil.view.php";
+                break;
+            case "blog" :
+                if (empty($url[1])) {
+                    $articleController->afficherArticles();
+                } else if ($url[1] === "article") {
+                    $articleController->afficherArticle($url[2]);
+                }
+                break;
+            case "login" :
+                if (empty($url[1])) {
+                    $userController->getPageLogin();
+                }
+                break;
+            case "inscription" :
+                if (empty($url[1])) {
+                    $userController-> getPageInscription();
+                }
+                break;
+            case "admin" :
+                if (empty($url[1])) {
+                    $userController->getPageAdmin();
+                } else if ($url[1] === "articles") {
+                    if (empty($url[2])) {
+                        $adminArticleController->afficherArticles();
+                    } else if ($url[2] == "ajouter") {
+                        $adminArticleController->ajoutArticle();
+                    } else if ($url[2] == "modificationArticle") {
+                        $adminArticleController->modificationArticle($url[3]);
+                    } else if ($url[2] == "suppressionArticle") {
+                        $adminArticleController->suppressionArticle($url[3]);
+                    }
+                } else if($url[1] === 'commentaires'){
+                    if (empty($url[2])) {
+                        $adminCommentController->afficherCommentaires();
+                    }else if ($url[2] == "accepterCommentaire") {
+                        $adminCommentController->accepterCommentaire($url[3]);
+                    }
+                } else if($url[1] === 'users'){
+                    if (empty($url[2])) {
+                        $userController->afficherUtilisateurs();
+                    }
+                }
+
+                break;
+            default :
+                throw new Exception("La page n'existe pas");
+        }
     }
 } catch (Exception $e) {
-    $errorMessage = $e->getMessage();
-    require "views/commons/erreur.view.php";
+    $msg = $e->getMessage();
+    require "views/front/accueil.view.php";
 }
-

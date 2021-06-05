@@ -7,7 +7,7 @@ function getArticles(){
     $stmt = $bdd->prepare("
        SELECT * FROM articles
        INNER JOIN categories on articles.category_id = categories.category_id
-       INNER JOIN adminusers on articles.user_id = adminusers.user_id 
+       INNER JOIN Users on articles.user_id = users.user_id 
        ");
     $stmt->execute();
     $articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -34,7 +34,7 @@ function getArticleById($idArticle){
     $bdd = connexionPDO();
     $req = 'SELECT * FROM articles 
     INNER JOIN categories on articles.category_id = categories.category_id
-    INNER JOIN adminusers on articles.user_id = adminusers.user_id 
+    INNER JOIN Users on articles.user_id = Users.user_id 
     where article_id = :idArticle
     ';
     $stmt = $bdd->prepare($req);
@@ -56,15 +56,15 @@ function getCategoriesArticle(){
     return $categories;
 }
 
-function getAdminUsers(){
+function getUsers(){
     $bdd = connexionPDO();
     $stmt = $bdd->prepare("
-       SELECT * FROM adminUsers
+       SELECT * FROM Users
        ");
     $stmt->execute();
-    $adminUsers = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $Users = $stmt->fetchAll(PDO::FETCH_ASSOC);
     $stmt->closeCursor();
-    return $adminUsers;
+    return $Users;
 }
 
 function insertArticleIntoBD($articleTitle, $articleExcerpt, $articleContent, $dateCreation, $dateModification, $userID, $categoryID, $imageID){
