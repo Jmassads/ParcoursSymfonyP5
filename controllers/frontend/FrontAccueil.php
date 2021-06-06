@@ -7,7 +7,6 @@ class FrontAccueil
     public function afficherPageAccueil()
     {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
             $data = [
                 'name' => htmlspecialchars($_POST['name']),
                 'email' => htmlspecialchars($_POST['email']),
@@ -32,7 +31,6 @@ class FrontAccueil
             }
 
             if (empty($data['email_err']) && empty($data['name_err'])) {
-
                 $name = $data['name'];
                 $email = $data['email'];
                 $message = $data['message'];
@@ -71,11 +69,7 @@ class FrontAccueil
             }
 
         } else {
-
             require "views/front/accueil.view.php";
         }
-
     }
-
-
 }

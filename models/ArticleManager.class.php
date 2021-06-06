@@ -1,7 +1,6 @@
 <?php
 
 
-
 require_once "Model.class.php";
 require_once "Article.class.php";
 
@@ -54,47 +53,57 @@ class ArticleManager extends Model
         return $categories;
     }
 
-    public function insertArticleIntoBD($articleTitle, $articleExcerpt, $articleContent, $dateCreation, $categoryID){
+    public function insertArticleIntoBD($articleTitle, $articleExcerpt, $articleContent, $dateCreation, $categoryID)
+    {
         $req = 'INSERT INTO articles (article_title, article_excerpt, article_content, date_creation,category_id)
     values (:title, :excerpt, :content, :date_creation, :categoryID)
     ';
         $stmt = $this->getBdd()->prepare($req);
-        $stmt->bindValue(":title",$articleTitle,PDO::PARAM_STR);
-        $stmt->bindValue(":excerpt",$articleExcerpt,PDO::PARAM_STR);
-        $stmt->bindValue(":content",$articleContent,PDO::PARAM_STR);
-        $stmt->bindValue(":date_creation",$dateCreation, PDO::PARAM_STR);
-        $stmt->bindValue(":categoryID",$categoryID,PDO::PARAM_INT);
+        $stmt->bindValue(":title", $articleTitle, PDO::PARAM_STR);
+        $stmt->bindValue(":excerpt", $articleExcerpt, PDO::PARAM_STR);
+        $stmt->bindValue(":content", $articleContent, PDO::PARAM_STR);
+        $stmt->bindValue(":date_creation", $dateCreation, PDO::PARAM_STR);
+        $stmt->bindValue(":categoryID", $categoryID, PDO::PARAM_INT);
         $resultat = $stmt->execute();
         $stmt->closeCursor();
-        if($resultat >0) return true;
-        else return false;
+        if ($resultat > 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
-    public function updateArticleIntoBD($articleid, $articleTitle, $articleExcerpt, $articleContent, $dateModification, $categoryID){
+    public function updateArticleIntoBD($articleid, $articleTitle, $articleExcerpt, $articleContent, $dateModification, $categoryID)
+    {
         $req = '
     update articles
     set article_title = :title, article_excerpt = :excerpt, article_content = :content, date_modification = :dateModification, category_id= :categoryID
     where article_id = :articleid
     ';
         $stmt = $this->getBdd()->prepare($req);
-        $stmt->bindValue(":articleid",$articleid,PDO::PARAM_INT);
-        $stmt->bindValue(":title",$articleTitle,PDO::PARAM_STR);
-        $stmt->bindValue(":excerpt",$articleExcerpt,PDO::PARAM_STR);
-        $stmt->bindValue(":content", $articleContent,PDO::PARAM_STR);
-        $stmt->bindValue(":dateModification", $dateModification,PDO::PARAM_STR);
-        $stmt->bindValue(":categoryID",$categoryID,PDO::PARAM_INT);
+        $stmt->bindValue(":articleid", $articleid, PDO::PARAM_INT);
+        $stmt->bindValue(":title", $articleTitle, PDO::PARAM_STR);
+        $stmt->bindValue(":excerpt", $articleExcerpt, PDO::PARAM_STR);
+        $stmt->bindValue(":content", $articleContent, PDO::PARAM_STR);
+        $stmt->bindValue(":dateModification", $dateModification, PDO::PARAM_STR);
+        $stmt->bindValue(":categoryID", $categoryID, PDO::PARAM_INT);
         $resultat = $stmt->execute();
         $stmt->closeCursor();
-        if($resultat > 0) return true;
-        return false;
+        if ($resultat > 0) {
+            return true;
+        }
+        {
+            return false;
+        }
     }
 
-    public function suppressionArticleBD($id){
+    public function suppressionArticleBD($id)
+    {
         $req = "
         DELETE from articles where article_id = :idArticle
         ";
         $stmt = $this->getBdd()->prepare($req);
-        $stmt->bindValue(":idArticle",$id,PDO::PARAM_INT);
+        $stmt->bindValue(":idArticle", $id, PDO::PARAM_INT);
         $resultat = $stmt->execute();
         $stmt->closeCursor();
     }
@@ -109,5 +118,4 @@ class ArticleManager extends Model
         $req->closeCursor();
         return $articles;
     }
-
 }
