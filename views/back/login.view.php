@@ -1,6 +1,6 @@
 <?php include 'views/back/headerLogin.php';?>
 
-<?php print_r($_SESSION);?>
+<?php //print_r($_SESSION);?>
 
 <div class="bg-white px-4 py-4">
     <div class="text-center mb-4">

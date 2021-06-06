@@ -99,7 +99,15 @@ class ArticleManager extends Model
         $stmt->closeCursor();
     }
 
-
-
+    public function countArticles()
+    {
+        $req = $this->getBdd()->prepare("
+        SELECT * FROM articles 
+      ");
+        $req->execute();
+        $articles = $req->rowCount();
+        $req->closeCursor();
+        return $articles;
+    }
 
 }

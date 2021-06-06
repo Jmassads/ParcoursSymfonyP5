@@ -1,13 +1,13 @@
 </main>
 
-<footer class="footer bg-white px-4">
+<footer class="footer bg-white px-4 border-top">
     <div class="row">
-        <div class="mt-8 my-2">
+        <div class="mt-4">
             <a href="<?php echo URL ?>login">Connexion</a>
         </div>
     </div>
     <div class="mx-auto">
-        <div class="border-top d-flex flex-column items-center">
+        <div class="d-flex flex-column items-center">
             <div class="text-center py-4">
                 <p class="text-sm fw-bold mb-2">© 2021 by Julia Assad</p>
             </div>

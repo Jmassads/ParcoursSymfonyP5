@@ -49,6 +49,7 @@ try {
                 }
                 break;
             case "admin" :
+                $userController->logout();
                 if (empty($url[1])) {
                     $userController->getPageAdmin();
                 } else if ($url[1] === "articles") {
@@ -66,10 +67,17 @@ try {
                         $adminCommentController->afficherCommentaires();
                     }else if ($url[2] == "accepterCommentaire") {
                         $adminCommentController->accepterCommentaire($url[3]);
+                    }else if ($url[2] == "afficherCommentaire") {
+                        $adminCommentController->afficherCommentaire($url[3]);
+                    }else if ($url[2] == "suppressionCommentaire") {
+                        $adminCommentController->suppressionCommentaire($url[3]);
                     }
+
                 } else if($url[1] === 'users'){
                     if (empty($url[2])) {
                         $userController->afficherUtilisateurs();
+                    }else if ($url[2] == "suppressionUser") {
+                        $userController->suppressionUser($url[3]);
                     }
                 }
 

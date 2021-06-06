@@ -1,5 +1,7 @@
 <?php include 'views/front/header.php'; ?>
 
+<?php flash('comment_message'); ?>
+
     <main class="pt-4">
 
         <section class="px-4">
@@ -66,33 +68,26 @@
                         </div>
                     <?php }
                     ?>
-
-
                 </div>
             </form>
         </section>
-
         <section class="px-4">
             <h2 class="pb-4">Commentaires</h2>
-<!--            <pre>-->
-<!--            --><?php
-//            print_r($commentaires); ?>
-<!--        </pre>-->
             <?php foreach ($commentaires as $commentaire): ?>
                 <div class="be-comment">
 
                     <div class="be-comment-content">
 			<span class="be-comment-name">
 				<a href="blog-detail-2.html">
-                    <?php echo $commentaire['user_lastname'] . ' ' . $commentaire['user_firstname'];?>
+                    <?php echo $commentaire['user_lastname'] . ' ' . $commentaire['user_firstname']; ?>
                 </a>
 			</span>
                         <span class="be-comment-time">
 				<i class="fa fa-clock-o"></i>
-				May 27, 2015 at 3:14am
+				<?php echo date('d-m-Y', strtotime($commentaire['date_posted'])); ?>
 			</span>
                         <p class="be-comment-text">
-                           <?php echo $commentaire['contenu'];?>
+                            <?php echo $commentaire['contenu']; ?>
                         </p>
                     </div>
                 </div>
@@ -100,8 +95,9 @@
 
 
         </section>
+
     </main>
 
-<?php print_r($_SESSION); ?>
+<?php //print_r($_SESSION); ?>
 
 <?php include 'views/front/footer.php'; ?>

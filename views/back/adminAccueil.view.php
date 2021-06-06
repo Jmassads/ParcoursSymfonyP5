@@ -1,12 +1,13 @@
 <?php include 'views/back/headerAdmin.php';?>
 
-<?php print_r($_SESSION);?>
+<?php //print_r($_SESSION);?>
+
 <section class="px-4">
     <div class="pt-6">
-        {nombre} d'articles
+        Vous avez publié <?php echo $numberArticles;?> article(s)
     </div>
     <div class="pt-6">
-        {nombre} de commentaires
+        Vous avez <?php echo $numberComments;?> commentaire(s)
     </div>
 </section>
 

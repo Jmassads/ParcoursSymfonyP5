@@ -4,11 +4,25 @@ require_once "models/UsersManager.class.php";
 
 class Users
 {
+   
+    /**
+     * @var ArticleManager
+     */
+    private $articleManager;
+    /**
+     * @var CommentManager
+     */
+    private $CommentManager;
+    /**
+     * @var usersManager
+     */
     private $userManager;
 
     public function __construct()
     {
         $this->userManager = new usersManager;
+        $this->articleManager = new ArticleManager;
+        $this->CommentManager = new CommentManager;
     }
 
     public function getPageLogin()
@@ -16,7 +30,7 @@ class Users
 //        print_r($_SESSION);
 
         if (isset($_SESSION['acces']) && !empty($_SESSION['acces']) && $_SESSION['acces'] === "admin") {
-            header("Location: admin");
+            redirect('admin');
         }
 
         $data = [
@@ -35,7 +49,7 @@ class Users
 //                        die('user admin');
                         $_SESSION['user_id'] = $user['user_id'];
                         $_SESSION['acces'] = "admin";
-                        header("Location: admin");
+                        redirect('admin');
                     }
 
                     if ($user['user_role'] == 2) {
@@ -44,7 +58,7 @@ class Users
                         if (!empty($_SESSION['previous'])) {
                             header('Location: ' . $_SESSION['previous']);
                         } else {
-                            header("Location: blog");
+                            redirect('blog');
                         }
 
                     }
@@ -61,21 +75,26 @@ class Users
         require_once "views/back/login.view.php";
     }
 
+    public function logout(){
+        if (isset($_POST['deconnexion']) && $_POST['deconnexion'] === "true") {
+
+            session_destroy();
+            redirect('login');
+        }
+    }
+
     public function getPageAdmin()
     {
+        $numberArticles = $this->articleManager->countArticles();
+        $numberComments = $this->CommentManager->countComments();
         if (!isset($_SESSION['acces'])) {
-            header("Location: login");
+            redirect('login');
         }
 
         if ($_SESSION['acces'] == 'author') {
             die('vous ne pouvez pas acceder a cette page');
         }
 
-        if (isset($_POST['deconnexion']) && $_POST['deconnexion'] === "true") {
-
-            session_destroy();
-            header("Location: login");
-        }
         require_once "views/back/adminAccueil.view.php";
     }
 
@@ -113,7 +132,13 @@ class Users
     }
 
     public function afficherUtilisateurs(){
-        echo 'page pour afficher les utilisateurs';
+        $users = $this->userManager->getUsers();
+        require_once "views/back/adminUsers.view.php";
+    }
+
+    public function suppressionUser($id){
+        $this->userManager->suppressionUserBD($id);
+        redirect('admin/users');
     }
 
 }

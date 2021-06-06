@@ -42,7 +42,9 @@ class FrontArticles
             $comment = Securite::secureHTML($_POST['comment']);
             $article_id = Securite::secureHTML($_POST['article_id']);
             $status = 0;
-            $this->commentManager->insertCommentIntoBD($comment, $_SESSION['user_id'], $article_id, $status);
+            $datePosted = date("Y-m-d H:i:s", time());
+            $this->commentManager->insertCommentIntoBD($comment, $datePosted, $_SESSION['user_id'], $article_id, $status);
+            flash('comment_message', "Votre commentaire est en attente de validation");
         }
 
         require "views/front/article.view.php";

@@ -40,3 +40,4 @@ function isConnexionValid($user_email, $password)
     $admin = getPasswordUser($user_email);
     return password_verify($password, $admin['user_password']);
 }
+

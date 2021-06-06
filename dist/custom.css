@@ -7833,4 +7833,14 @@ a {
 .form-group textarea.form-input {
   height: 150px; }
 
+.btn-outline-tart-orange:hover {
+  color: #fff;
+  background-color: #f7484e;
+  border-color: #f7484e; }
+
+.btn-outline-info:hover {
+  color: #fff;
+  background-color: #ffc107;
+  border-color: #ffc107; }
+
 /*# sourceMappingURL=custom.css.map */

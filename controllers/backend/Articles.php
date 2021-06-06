@@ -18,6 +18,7 @@ class Articles
 
     public function afficherArticles()
     {
+
         $articles = $this->articleManager->getArticles();
         require "views/back/adminArticles.view.php";
     }
@@ -37,14 +38,13 @@ class Articles
             $dateCreation = date("Y-m-d H:i:s", time());
 
             if ($this->articleManager->insertArticleIntoBD($articleTitle, $articleExcerpt, $articleContent, $dateCreation, $category)) {
+                flash('article_message', "L'article a été ajouté");
                 redirect('admin/articles');
-                $alert = "La création de l'article est effectuée";
-                $alertType = ALERT_SUCCESS;
+
             } else {
                 die('not working');
                 throw new Exception("L'insertion en BD n'a pas fonctionné");
-                $alert = "La création de l'article na pas fonctionnée";
-                $alertType = ALERT_DANGER;
+
 
             }
         }
@@ -63,14 +63,12 @@ class Articles
 
         if(isset($_POST['submit'])){
             if ($this->articleManager->updateArticleIntoBD($id, $articleTitle, $articleExcerpt, $articleContent, $dateModification, $category)) {
+                flash('article_message', "L'article a été modifié");
                 redirect('admin/articles');
-                $alert = "La modification de l'article est effectuée";
-                $alertType = ALERT_SUCCESS;
+
             } else {
 
                 throw new Exception("La modification en BD n'a pas fonctionné");
-                $alert = "La création de l'article na pas fonctionnée";
-                $alertType = ALERT_DANGER;
 
             }
         }
@@ -79,6 +77,7 @@ class Articles
 
     public function suppressionArticle($id){
         $this->articleManager->suppressionArticleBD($id);
+        flash('article_message', "L'article a été supprimé");
         redirect('admin/articles');
     }
 

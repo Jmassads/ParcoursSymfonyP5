@@ -63,4 +63,24 @@ class UsersManager extends Model
     }
 
 
+    function getUsers(){
+        $req = $this->getBdd()->prepare("
+        SELECT * FROM Users 
+      ");
+        $req->execute();
+        $users = $req->fetchAll(PDO::FETCH_ASSOC);
+        $req->closeCursor();
+        return $users;
+    }
+
+    public function suppressionUserBD($id){
+        $req = "
+        DELETE from users where user_id = :idUser
+        ";
+        $stmt = $this->getBdd()->prepare($req);
+        $stmt->bindValue(":idUser",$id,PDO::PARAM_INT);
+        $resultat = $stmt->execute();
+        $stmt->closeCursor();
+    }
+
 }

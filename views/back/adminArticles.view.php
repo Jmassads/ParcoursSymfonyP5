@@ -1,5 +1,6 @@
 <?php include 'views/back/headerAdmin.php'; ?>
 
+<?php flash('article_message');?>
 
 <section class="px-4 py-4">
     <a class="btn btn-outline-blue" href="<?php echo URL; ?>admin/articles/ajouter">Ajouter un article</a>

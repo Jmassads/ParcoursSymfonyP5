@@ -30,6 +30,9 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto">
             <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="<?php echo URL ?>admin">Dashboard</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="<?php echo URL ?>admin/articles">Articles</a>
             </li>
             <li class="nav-item">
