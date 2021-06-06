@@ -1,6 +1,6 @@
 
 <?php
-require_once 'pdo.php';
+require_once 'remove.php';
 
 function getArticles(){
     $bdd = connexionPDO();

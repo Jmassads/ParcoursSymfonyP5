@@ -6,11 +6,13 @@ error_reporting(E_ALL ^ E_NOTICE);
 
 define("URL", str_replace("index.php", "", (isset($_SERVER['HTTPS']) ? "https" : "http") .
     "://$_SERVER[HTTP_HOST]$_SERVER[PHP_SELF]"));
-
+require_once "config/config.php";
 require_once "config/Securite.class.php";
-require_once 'config/helper.php';
+require_once 'config/Helper.php';
 
 require_once "controllers/frontend/FrontArticles.php";
+require_once "controllers/frontend/FrontAccueil.php";
+$accueilController = new FrontAccueil();
 $articleController = new FrontArticles();
 
 
@@ -24,12 +26,12 @@ $userController = new Users;
 
 try {
     if (empty($_GET['page'])) {
-        require "views/front/accueil.view.php";
+        $accueilController->afficherPageAccueil();
     } else {
         $url = explode("/", filter_var($_GET['page']), FILTER_SANITIZE_URL);
         switch ($url[0]) {
             case "accueil" :
-                require "views/front/accueil.view.php";
+                $accueilController->afficherPageAccueil();
                 break;
             case "blog" :
                 if (empty($url[1])) {
