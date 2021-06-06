@@ -25,10 +25,10 @@ class Articles
     {
         $_POST  = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
         $categoriesArticle = $this->articleManager->getCategoriesArticle();
-        $articleTitle = Securite::secureHTML($_POST['articleTitle']);
-        $articleExcerpt = Securite::secureHTML($_POST['articleExcerpt']);
-        $articleContent = Securite::secureHTML($_POST['articleContent']);
-        $category = $_POST['articleCategory'];
+        $articleTitle = trim($_POST['articleTitle']);
+        $articleExcerpt = trim($_POST['articleExcerpt']);
+        $articleContent = trim($_POST['articleContent']);
+        $category = trim($_POST['articleCategory']);
         $dateCreation = date("Y-m-d H:i:s", time());
         if (isset($articleTitle) && !empty($articleTitle) &&
             isset($articleExcerpt) && !empty($articleExcerpt) &&
