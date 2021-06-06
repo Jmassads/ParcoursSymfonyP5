@@ -27,7 +27,6 @@ class Users
 
     public function getPageLogin()
     {
-//        print_r($_SESSION);
 
         if (isset($_SESSION['acces']) && !empty($_SESSION['acces']) && $_SESSION['acces'] === "admin") {
             redirect('admin');
@@ -46,7 +45,6 @@ class Users
                 $user = $this->userManager->findUserByEmail($email);
                 if ($this->userManager->isConnexionValid($email, $password)) {
                     if ($user['user_role'] == 1) {
-//                        die('user admin');
                         $_SESSION['user_id'] = $user['user_id'];
                         $_SESSION['acces'] = "admin";
                         redirect('admin');
@@ -100,8 +98,7 @@ class Users
 
     public function getPageInscription()
     {
-
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        if (isset($_POST['submit']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
             if (isset($_POST['user_lastname']) && !empty($_POST['user_firstname']) &&
                 isset($_POST['user_password']) && !empty($_POST['user_email'])) {
                 $firstname = Securite::secureHTML($_POST['user_firstname']);
@@ -112,13 +109,11 @@ class Users
                     $data['email_err'] = 'Cet email est déjà pris';
                 } else {
                     if ($this->userManager->insertUserIntoBD($firstname, $lastname, $email, $password, 2)) {
-
                         $_SESSION['acces'] = "author";
                         header('Location: ' . $_SESSION['previous']);
 
                     } else {
-                        die('not working');
-                        throw new Exception("L'insertion en BD n'a pas fonctionné");
+                        die('Something went wrong');
 
 
                     }

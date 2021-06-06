@@ -23,24 +23,23 @@ class Articles
 
     public function ajoutArticle()
     {
-        $_POST  = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
         $categoriesArticle = $this->articleManager->getCategoriesArticle();
         $articleTitle = trim($_POST['articleTitle']);
         $articleExcerpt = trim($_POST['articleExcerpt']);
         $articleContent = trim($_POST['articleContent']);
-        $category = trim($_POST['articleCategory']);
+        $category = $_POST['articleCategory'];
         $dateCreation = date("Y-m-d H:i:s", time());
         if (isset($articleTitle) && !empty($articleTitle) &&
             isset($articleExcerpt) && !empty($articleExcerpt) &&
             isset($articleContent) && !empty($articleContent)
         ) {
+            $_POST  = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
             if ($this->articleManager->insertArticleIntoBD($articleTitle, $articleExcerpt, $articleContent, $dateCreation, $category)) {
                 flash('article_message', "L'article a été ajouté");
                 redirect('admin/articles');
 
             } else {
-                die('not working');
-                throw new Exception("L'insertion en BD n'a pas fonctionné");
+                die('Something went wrong');
 
 
             }
@@ -64,7 +63,7 @@ class Articles
                 redirect('admin/articles');
 
             } else {
-                throw new Exception("La modification en BD n'a pas fonctionné");
+                die('Something went wrong');
 
             }
         }

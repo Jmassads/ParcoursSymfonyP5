@@ -1,6 +1,6 @@
 <?php include 'views/back/headerLogin.php';?>
 
-<?php print_r($_SESSION);?>
+
 <div class="bg-white px-4 py-4">
     <div class="text-center mb-4">
         <a href="<?php echo URL ?>"
@@ -43,7 +43,7 @@
                 <input class="shadow appearance-none border border-red rounded w-100 py-2 px-3 text-grey-darker mb-3" id="password" type="password" placeholder="******************" name="user_password" required>
 
             </div>
-            <button class="btn bg-tart-orange text-white font-bold py-2 px-4 rounded" type="submit">
+            <button class="btn bg-tart-orange text-white font-bold py-2 px-4 rounded" name="submit" type="submit">
                 S'inscrire
             </button>
         </form>

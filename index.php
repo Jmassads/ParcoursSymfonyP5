@@ -30,61 +30,61 @@ try {
     } else {
         $url = explode("/", filter_var($_GET['page']), FILTER_SANITIZE_URL);
         switch ($url[0]) {
-            case "accueil" :
+            case "accueil":
                 $accueilController->afficherPageAccueil();
                 break;
-            case "blog" :
+            case "blog":
                 if (empty($url[1])) {
                     $articleController->afficherArticles();
                 } else if ($url[1] === "article") {
                     $articleController->afficherArticle($url[2]);
                 }
                 break;
-            case "login" :
+            case "login":
                 if (empty($url[1])) {
                     $userController->getPageLogin();
                 }
                 break;
-            case "inscription" :
+            case "inscription":
                 if (empty($url[1])) {
                     $userController-> getPageInscription();
                 }
                 break;
-            case "admin" :
+            case "admin":
                 $userController->logout();
                 if (empty($url[1])) {
                     $userController->getPageAdmin();
                 } else if ($url[1] === "articles") {
                     if (empty($url[2])) {
                         $adminArticleController->afficherArticles();
-                    } else if ($url[2] == "ajouter") {
+                    } elseif ($url[2] == "ajouter") {
                         $adminArticleController->ajoutArticle();
-                    } else if ($url[2] == "modificationArticle") {
+                    } elseif ($url[2] == "modificationArticle") {
                         $adminArticleController->modificationArticle($url[3]);
-                    } else if ($url[2] == "suppressionArticle") {
+                    } elseif ($url[2] == "suppressionArticle") {
                         $adminArticleController->suppressionArticle($url[3]);
                     }
-                } else if($url[1] === 'commentaires'){
+                } elseif ($url[1] === 'commentaires') {
                     if (empty($url[2])) {
                         $adminCommentController->afficherCommentaires();
-                    }else if ($url[2] == "accepterCommentaire") {
+                    } elseif ($url[2] == "accepterCommentaire") {
                         $adminCommentController->accepterCommentaire($url[3]);
-                    }else if ($url[2] == "afficherCommentaire") {
+                    } elseif ($url[2] == "afficherCommentaire") {
                         $adminCommentController->afficherCommentaire($url[3]);
-                    }else if ($url[2] == "suppressionCommentaire") {
+                    } elseif ($url[2] == "suppressionCommentaire") {
                         $adminCommentController->suppressionCommentaire($url[3]);
                     }
 
-                } else if($url[1] === 'users'){
+                } elseif ($url[1] === 'users') {
                     if (empty($url[2])) {
                         $userController->afficherUtilisateurs();
-                    }else if ($url[2] == "suppressionUser") {
+                    } elseif ($url[2] == "suppressionUser") {
                         $userController->suppressionUser($url[3]);
                     }
                 }
 
                 break;
-            default :
+            default:
                 throw new Exception("La page n'existe pas");
         }
     }
