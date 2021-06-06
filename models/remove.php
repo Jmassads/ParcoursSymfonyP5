@@ -6,8 +6,8 @@ function connexionPDO(){
         $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
         return $bdd;
 
-    } catch (PDOException $e){
+    } catch (PDOException $e) {
         $message = "Erreur PDO avec le message : " . $e->getMessage();
-        die($message);
+
     }
 }
