@@ -23,6 +23,7 @@ class Articles
 
     public function ajoutArticle()
     {
+        $_POST  = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
         $categoriesArticle = $this->articleManager->getCategoriesArticle();
         $articleTitle = Securite::secureHTML($_POST['articleTitle']);
         $articleExcerpt = Securite::secureHTML($_POST['articleExcerpt']);
