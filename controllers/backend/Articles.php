@@ -39,7 +39,7 @@ class Articles
                 redirect('admin/articles');
 
             } else {
-                die('Something went wrong');
+//                die('Something went wrong');
 
 
             }
@@ -63,7 +63,7 @@ class Articles
                 redirect('admin/articles');
 
             } else {
-                die('Something went wrong');
+//                die('Something went wrong');
 
             }
         }

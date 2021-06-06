@@ -17,7 +17,6 @@
     </form>
 
     <?php if (isset($_POST['etape']) && (int)$_POST['etape'] >= 2) { ?>
-        <?php print_r($articles);?>
         <form action="" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="etape" value="3">
             <input type="hidden" name="categoryArticle" value="<?php echo $_POST['categoryArticle'] ?>">

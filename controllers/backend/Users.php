@@ -90,7 +90,7 @@ class Users
         }
 
         if ($_SESSION['acces'] == 'author') {
-            die('vous ne pouvez pas acceder a cette page');
+//            die('vous ne pouvez pas acceder a cette page');
         }
 
         require_once "views/back/adminAccueil.view.php";
@@ -113,7 +113,7 @@ class Users
                         header('Location: ' . $_SESSION['previous']);
 
                     } else {
-                        die('Something went wrong');
+//                        die('Something went wrong');
 
 
                     }
