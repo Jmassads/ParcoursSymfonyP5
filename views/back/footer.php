@@ -5,4 +5,3 @@
 <script src="<?php echo URL ?>dist/main.js"></script>
 
 </body>
-</html>

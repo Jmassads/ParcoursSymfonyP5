@@ -1,44 +1,47 @@
-<?php include 'views/header.php';?>
+<?php include 'views/front/header.php';?>
 
-<main class="pt-24">
-    <section id="blog" class="items-center justify-between mx-auto px-4 py-12 lg:py-16 xl:py-24 2xl:py-32">
-        <h2 class="text-4xl font-semibold text-tart-orange">Mon blog<span
-                class="text-black">.</span></h2>
-        <div class="block text-center py-6">
-            <p class="w-full md:w-2/3 mr-auto ml-auto text-grey-darker text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores delectus dolor maxime possimus quaerat ullam voluptas! Aliquid expedita fugiat nihil omnis pariatur perferendis repellat repellendus similique. Aut quasi ratione saepe?
+    <section id="blog" class="px-4 py-4">
+        <h2 class="text-4xl text-tart-orange">Mon blog
+            <span class="text-black">.</span>
+        </h2>
+        <div class="row text-center py-2">
+            <p class="col-sm-8 mx-auto text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores delectus dolor maxime possimus quaerat ullam voluptas! Aliquid expedita fugiat nihil omnis pariatur perferendis repellat repellendus similique. Aut quasi ratione saepe?
             </p>
         </div>
-        <pre>
-    </pre>
-        <div class="flex flex-wrap -mx-4">
+        <div class="row ">
             <?php foreach ($articles as $article): ?>
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-12">
-                    <div class="bg-white overflow-hidden min-h-full p-4">
+                <div class="col-sm-6 col-md-4 mb-3">
+                    <div class="border bg-white overflow-hidden h-100 p-3">
                         <div class="post-categories mb-2">
-                            <a class="font-semibold text-tart-orange"
-                               href=""><?php echo $article['category_title']; ?></a>
+                            <a class="text-tart-orange"
+                               href=""><?php echo $article->getCategoryTitle(); ?></a>
                         </div>
                         <div>
-                            <h3 class="text-lg mb-4"><?php echo $article['article_title']; ?></h3>
-                            <?php echo $article['article_excerpt']; ?>
+                            <h3 class="text-lg mb-4"><?php echo $article->getTitre(); ?></h3>
+                            <?php echo $article->getExcerpt(); ?>
                         </div>
-                        <div class="mt-6 flex items-center">
-                            <div class="flex-shrink-0">
-                                <img class="h-10 w-10 rounded-full"
-                                     src="src/img/<?php echo $article['url_image'];?>"
+                        <div class="mt-3 d-flex items-center">
+                            <div class="">
+                                <img class="w-10 rounded-circle"
+                                     src="<?php echo URL ?>src/img/avatar.png"
                                      alt="">
                             </div>
-                            <div class="ml-3">
-                                <p class="text-sm leading-5 font-medium text-gray-900" href="">
-                                    <?php echo $article['user_firstname'] . ' ' . $article['user_lastname']; ?></p>
-                                <div class="text-sm leading-5 font-medium text-gray-900">
-                                    <?php echo date('d-m-Y', strtotime($article['date_creation'])); ?>
+                            <div class="ms-3">
+                                <div class="text-sm" href="#">
+                                    Julia Assad
+                                </div>
+                                <div class="text-sm">
+                                    <?php if(empty($article->getDateModification())):?>
+                                        <?php echo date('d-m-Y', strtotime($article->getDateCreation())); ?>
+                                    <?php else:?>
+                                        <?php echo date('d-m-Y', strtotime($article->getDateModification())); ?>
+                                    <?php endif;?>
                                 </div>
                             </div>
                         </div>
-                        <div class="cursor-pointer mt-10 font-semibold flex items-center hover:text-tart-orange">
-                            <a href="<?= URL;?>article&idArticle=<?=$article['article_id'];?>" class="mr-2 ">Lire la suite</a>
-                            <ion-icon name="arrow-forward"></ion-icon>
+                        <div class="cursor-pointer mt-4 d-flex align-items-center">
+                            <a href="<?= URL ?>blog/article/<?= $article->getId(); ?>" class="d-block">Lire la suite</a>
+                            <ion-icon class="ms-1" name="arrow-forward"></ion-icon>
                         </div>
                     </div>
                 </div>
@@ -47,6 +50,6 @@
 
 
     </section>
-</main>
 
-<?php include 'views/footer.php';?>
+
+<?php include 'views/front/footer.php';?>
