@@ -1,7 +1,5 @@
 <?php
 
-
-
 require_once "models/ArticleManager.class.php";
 require_once "models/users.dao.php"; // a changer
 require_once "dist/utile/formatage.php";
@@ -30,7 +28,6 @@ class Articles
             isset($_POST['articleExcerpt']) && !empty($_POST['articleExcerpt']) &&
             isset($_POST['articleContent']) && !empty($_POST['articleContent'])
         ) {
-
             $articleTitle = Securite::secureHTML($_POST['articleTitle']);
             $articleExcerpt = Securite::secureHTML($_POST['articleExcerpt']);
             $articleContent = Securite::secureHTML($_POST['articleContent']);
@@ -61,13 +58,12 @@ class Articles
         $category = $_POST['categoryArticle'];
         $dateModification = date("Y-m-d H:i:s", time());
 
-        if(isset($_POST['submit'])){
+        if (isset($_POST['submit'])) {
             if ($this->articleManager->updateArticleIntoBD($id, $articleTitle, $articleExcerpt, $articleContent, $dateModification, $category)) {
                 flash('article_message', "L'article a été modifié");
                 redirect('admin/articles');
 
             } else {
-
                 throw new Exception("La modification en BD n'a pas fonctionné");
 
             }
@@ -75,7 +71,8 @@ class Articles
         require "views/back/adminArticleModif.view.php";
     }
 
-    public function suppressionArticle($id){
+    public function suppressionArticle($id)
+    {
         $this->articleManager->suppressionArticleBD($id);
         flash('article_message', "L'article a été supprimé");
         redirect('admin/articles');

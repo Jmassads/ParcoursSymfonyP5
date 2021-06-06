@@ -4,9 +4,8 @@ require_once "Model.class.php";
 class UsersManager extends Model
 {
 
-    function findUserByEmail($user_email)
+    public function findUserByEmail($user_email)
     {
-
         $req = '
     SELECT * 
     FROM Users 
@@ -24,7 +23,7 @@ class UsersManager extends Model
         }
     }
 
-    function getPasswordUser($user_email)
+    public function getPasswordUser($user_email)
     {
 
         $req = '
@@ -39,13 +38,13 @@ class UsersManager extends Model
         return $admin;
     }
 
-    function isConnexionValid($user_email, $password)
+    public function isConnexionValid($user_email, $password)
     {
         $user = $this->getPasswordUser($user_email);
         return password_verify($password, $user['user_password']);
     }
 
-    function insertUserIntoBD($userFirstname, $userLastname, $userEmail, $userPassword, $userRole)
+    public function insertUserIntoBD($userFirstname, $userLastname, $userEmail, $userPassword, $userRole)
     {
         $req = 'INSERT INTO users (user_firstname, user_lastname, user_email, user_password, user_role)
     values (:firstname, :lastname, :email, :password, :role)
@@ -58,12 +57,15 @@ class UsersManager extends Model
         $stmt->bindValue(":role", $userRole, PDO::PARAM_INT);
         $resultat = $stmt->execute();
         $stmt->closeCursor();
-        if ($resultat > 0) return true;
-        else return false;
+        if ($resultat > 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
-
-    function getUsers(){
+    public function getUsers()
+    {
         $req = $this->getBdd()->prepare("
         SELECT * FROM Users 
       ");
@@ -73,14 +75,14 @@ class UsersManager extends Model
         return $users;
     }
 
-    public function suppressionUserBD($id){
+    public function suppressionUserBD($id)
+    {
         $req = "
         DELETE from users where user_id = :idUser
         ";
         $stmt = $this->getBdd()->prepare($req);
-        $stmt->bindValue(":idUser",$id,PDO::PARAM_INT);
+        $stmt->bindValue(":idUser", $id, PDO::PARAM_INT);
         $resultat = $stmt->execute();
         $stmt->closeCursor();
     }
-
 }

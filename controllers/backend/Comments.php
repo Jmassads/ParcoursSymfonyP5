@@ -18,17 +18,20 @@ class Comments
         $this->CommentManager = new CommentManager;
     }
 
-    public function afficherCommentaires(){
+    public function afficherCommentaires()
+    {
         $comments = $this->CommentManager->getComments();
         require "views/back/adminComments.view.php";
     }
 
-    public function afficherCommentaire($id){
+    public function afficherCommentaire($id)
+    {
         $comment = $this->CommentManager->getCommentById($id);
         require "views/back/adminComment.view.php";
     }
 
-    public function accepterCommentaire($id){
+    public function accepterCommentaire($id)
+    {
         $status = 1;
         if ($this->CommentManager->acceptComment($id, $status)) {
             flash('comment_message', "Le commentaire a été accepté");
@@ -36,7 +39,8 @@ class Comments
         }
     }
 
-    public function suppressionCommentaire($id){
+    public function suppressionCommentaire($id)
+    {
         $this->CommentManager->suppressionCommentBD($id);
         flash('comment_message', "Le commentaire a été supprimé");
         redirect('admin/commentaires');

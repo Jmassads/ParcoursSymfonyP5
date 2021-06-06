@@ -1,0 +1,12 @@
+{
+    "name": "juliaassad/blog",
+    "authors": [
+        {
+            "name": "Julia Assad",
+            "email": "jassadsimao@netemedia.fr"
+        }
+    ],
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*"
+    }
+}

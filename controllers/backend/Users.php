@@ -1,6 +1,6 @@
 <?php
-require_once "models/UsersManager.class.php";
 
+require_once "models/UsersManager.class.php";
 
 class Users
 {
@@ -75,9 +75,9 @@ class Users
         require_once "views/back/login.view.php";
     }
 
-    public function logout(){
+    public function logout()
+    {
         if (isset($_POST['deconnexion']) && $_POST['deconnexion'] === "true") {
-
             session_destroy();
             redirect('login');
         }
@@ -131,12 +131,14 @@ class Users
         require_once "views/back/inscription.view.php";
     }
 
-    public function afficherUtilisateurs(){
+    public function afficherUtilisateurs()
+    {
         $users = $this->userManager->getUsers();
         require_once "views/back/adminUsers.view.php";
     }
 
-    public function suppressionUser($id){
+    public function suppressionUser($id)
+    {
         $this->userManager->suppressionUserBD($id);
         redirect('admin/users');
     }

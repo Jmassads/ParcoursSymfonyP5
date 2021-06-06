@@ -2,7 +2,8 @@
 <?php
 require_once 'remove.php';
 
-function getArticles(){
+function getArticles()
+{
     $bdd = connexionPDO();
     $stmt = $bdd->prepare("
        SELECT * FROM articles
@@ -15,7 +16,8 @@ function getArticles(){
     return $articles;
 }
 
-function getArticlesbyCategory($category){
+function getArticlesbyCategory($category)
+{
     $bdd = connexionPDO();
     $req = '
     SELECT * 
@@ -23,14 +25,15 @@ function getArticlesbyCategory($category){
     where category_id = :category
     ';
     $stmt = $bdd->prepare($req);
-    $stmt->bindValue(":category",$category,PDO::PARAM_STR);
+    $stmt->bindValue(":category", $category,PDO::PARAM_STR);
     $stmt->execute();
     $articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
     $stmt->closeCursor();
     return $articles;
 }
 
-function getArticleById($idArticle){
+function getArticleById($idArticle)
+{
     $bdd = connexionPDO();
     $req = 'SELECT * FROM articles 
     INNER JOIN categories on articles.category_id = categories.category_id
@@ -45,7 +48,8 @@ function getArticleById($idArticle){
     return $article;
 }
 
-function getCategoriesArticle(){
+function getCategoriesArticle()
+{
     $bdd = connexionPDO();
     $stmt = $bdd->prepare("
        SELECT * FROM categories
@@ -56,7 +60,8 @@ function getCategoriesArticle(){
     return $categories;
 }
 
-function getUsers(){
+function getUsers()
+{
     $bdd = connexionPDO();
     $stmt = $bdd->prepare("
        SELECT * FROM Users
@@ -67,28 +72,30 @@ function getUsers(){
     return $Users;
 }
 
-function insertArticleIntoBD($articleTitle, $articleExcerpt, $articleContent, $dateCreation, $dateModification, $userID, $categoryID, $imageID){
+function insertArticleIntoBD($articleTitle, $articleExcerpt, $articleContent, $dateCreation, $dateModification, $userID, $categoryID, $imageID)
+{
     $bdd = connexionPDO();
     $req = '
     INSERT INTO articles (article_title, article_excerpt, article_content, date_creation, date_modification, user_id, category_id, id_image)
     values (:title, :excerpt, :content, :date_creation, :date_modification, :userID, :categoryID, :imageID)
     ';
     $stmt = $bdd->prepare($req);
-    $stmt->bindValue(":title",$articleTitle,PDO::PARAM_STR);
-    $stmt->bindValue(":excerpt",$articleExcerpt,PDO::PARAM_STR);
-    $stmt->bindValue(":content",$articleContent,PDO::PARAM_STR);
-    $stmt->bindValue(":date_creation",$dateCreation, PDO::PARAM_STR);
-    $stmt->bindValue(":date_modification",$dateModification, PDO::PARAM_STR);
-    $stmt->bindValue(":userID",$userID,PDO::PARAM_INT);
-    $stmt->bindValue(":categoryID",$categoryID,PDO::PARAM_INT);
-    $stmt->bindValue(":imageID",$imageID,PDO::PARAM_INT);
+    $stmt->bindValue(":title", $articleTitle, PDO::PARAM_STR);
+    $stmt->bindValue(":excerpt", $articleExcerpt, PDO::PARAM_STR);
+    $stmt->bindValue(":content", $articleContent, PDO::PARAM_STR);
+    $stmt->bindValue(":date_creation", $dateCreation, PDO::PARAM_STR);
+    $stmt->bindValue(":date_modification", $dateModification, PDO::PARAM_STR);
+    $stmt->bindValue(":userID", $userID, PDO::PARAM_INT);
+    $stmt->bindValue(":categoryID", $categoryID, PDO::PARAM_INT);
+    $stmt->bindValue(":imageID", $imageID, PDO::PARAM_INT);
     $resultat = $stmt->execute();
     $stmt->closeCursor();
     if($resultat >0) return true;
     else return false;
 }
 
-function updateArticleIntoBD($articleid, $articleTitle, $articleExcerpt, $articleContent, $dateModification, $userID, $categoryID){
+function updateArticleIntoBD($articleid, $articleTitle, $articleExcerpt, $articleContent, $dateModification, $userID, $categoryID)
+{
     $bdd = connexionPDO();
     $req = '
     update articles
@@ -96,42 +103,41 @@ function updateArticleIntoBD($articleid, $articleTitle, $articleExcerpt, $articl
     where article_id = :articleid
     ';
     $stmt = $bdd->prepare($req);
-    $stmt->bindValue(":articleid",$articleid,PDO::PARAM_INT);
-    $stmt->bindValue(":title",$articleTitle,PDO::PARAM_STR);
-    $stmt->bindValue(":excerpt",$articleExcerpt,PDO::PARAM_STR);
-    $stmt->bindValue(":content", $articleContent,PDO::PARAM_STR);
-    $stmt->bindValue(":dateModification", $dateModification,PDO::PARAM_STR);
-    $stmt->bindValue(":userID",$userID,PDO::PARAM_INT);
-    $stmt->bindValue(":categoryID",$categoryID,PDO::PARAM_INT);
+    $stmt->bindValue(":articleid", $articleid, PDO::PARAM_INT);
+    $stmt->bindValue(":title", $articleTitle, PDO::PARAM_STR);
+    $stmt->bindValue(":excerpt", $articleExcerpt, PDO::PARAM_STR);
+    $stmt->bindValue(":content", $articleContent, PDO::PARAM_STR);
+    $stmt->bindValue(":dateModification", $dateModification, PDO::PARAM_STR);
+    $stmt->bindValue(":userID", $userID, PDO::PARAM_INT);
+    $stmt->bindValue(":categoryID", $categoryID, PDO::PARAM_INT);
     $resultat = $stmt->execute();
     $stmt->closeCursor();
-    if($resultat > 0) return true;
-    return false;
+    if ($resultat > 0) {
+        return true;
+    } else {
+        return false;
+    }
+
 }
 
 
-function deleteArticleFromBD($articleid){
+function deleteArticleFromBD($articleid)
+{
     $bdd = connexionPDO();
     $req = '
     delete from articles where article_id = :articleid
     ';
     $stmt = $bdd->prepare($req);
-    $stmt->bindValue(":articleid",$articleid,PDO::PARAM_INT);
+    $stmt->bindValue(":articleid", $articleid, PDO::PARAM_INT);
     $resultat = $stmt->execute();
     $stmt->closeCursor();
-    if($resultat > 0) return true;
-    return false;
-}
-
-
-function test(){
-    $bdd = connexionPDO();
-    $req = 'INSERT INTO articles(article_title, article_excerpt, article_content, date_creation, date_modification, category_id, id_image, user_id) VALUES(\'test\', \'test\', \'test\', \'2021-02-14 20:31:14\', \'2021-02-14 20:31:14\', 2, 2, 1)';
-    $stmt = $bdd->prepare($req);
-    $stmt->execute();
-
-  die('this is working');
+    if ($resultat > 0) {
+        return true;
+    } else {
+        return false;
+    }
 
 }
+
 
 
