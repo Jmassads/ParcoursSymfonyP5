@@ -24,16 +24,15 @@ class Articles
     public function ajoutArticle()
     {
         $categoriesArticle = $this->articleManager->getCategoriesArticle();
-        if (isset($_POST['articleTitle']) && !empty($_POST['articleTitle']) &&
-            isset($_POST['articleExcerpt']) && !empty($_POST['articleExcerpt']) &&
-            isset($_POST['articleContent']) && !empty($_POST['articleContent'])
+        $articleTitle = Securite::secureHTML($_POST['articleTitle']);
+        $articleExcerpt = Securite::secureHTML($_POST['articleExcerpt']);
+        $articleContent = Securite::secureHTML($_POST['articleContent']);
+        $category = $_POST['articleCategory'];
+        $dateCreation = date("Y-m-d H:i:s", time());
+        if (isset($articleTitle) && !empty($articleTitle) &&
+            isset($articleExcerpt) && !empty($articleExcerpt) &&
+            isset($articleContent) && !empty($articleContent)
         ) {
-            $articleTitle = Securite::secureHTML($_POST['articleTitle']);
-            $articleExcerpt = Securite::secureHTML($_POST['articleExcerpt']);
-            $articleContent = Securite::secureHTML($_POST['articleContent']);
-            $category = $_POST['articleCategory'];
-            $dateCreation = date("Y-m-d H:i:s", time());
-
             if ($this->articleManager->insertArticleIntoBD($articleTitle, $articleExcerpt, $articleContent, $dateCreation, $category)) {
                 flash('article_message', "L'article a été ajouté");
                 redirect('admin/articles');
