@@ -20,6 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f72cef1-e66e-4ff1-9196-d67498625e98" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/parcours_symfony_projet_5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/parcours_symfony_projet_5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/front/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/header.php" afterDir="false" />
     </list>
@@ -28,7 +30,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="e7b94e16-3abc-4436-a7e3-711a403c8f5b" />
     </execution>
@@ -41,7 +44,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1qfrie4PW39KHvTQvabbWKAMsJY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -97,7 +105,8 @@
       <workItem from="1622973107587" duration="30000" />
       <workItem from="1622973576516" duration="191000" />
       <workItem from="1622974212557" duration="76000" />
-      <workItem from="1622975054219" duration="11854000" />
+      <workItem from="1622975054219" duration="12287000" />
+      <workItem from="1622990906016" duration="94000" />
     </task>
     <servers />
   </component>
