@@ -2,7 +2,7 @@
 
 require_once "models/ArticleManager.class.php";
 require_once "models/users.dao.php"; // a changer
-require_once "dist/utile/formatage.php";
+require_once "public/utile/formatage.php";
 
 class Articles
 {

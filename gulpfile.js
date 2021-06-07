@@ -15,7 +15,7 @@ gulp.task("sassTask", function() {
         .pipe(sourcemaps.init()) // initialize sourcemaps first
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
-        .pipe(gulp.dest('./dist'))
+        .pipe(gulp.dest('./public'))
 });
 
 // JS task: uglifies JS files to main.js
@@ -25,7 +25,7 @@ gulp.task('jsTask', function() {
         .pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(sourcemaps.write()) // Inline source maps.
-        .pipe(gulp.dest('./dist'))
+        .pipe(gulp.dest('./public'))
 });
 
 // Static Server & watching scss/js/html files

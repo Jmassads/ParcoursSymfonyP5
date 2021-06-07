@@ -3,7 +3,7 @@
 require_once "models/ArticleManager.class.php";
 require_once "models/CommentManager.class.php";
 require_once "models/users.dao.php";
-require_once "dist/utile/formatage.php";
+require_once "public/utile/formatage.php";
 
 class FrontArticles
 {

@@ -1,6 +1,6 @@
 <?php
 
-require_once "dist/utile/formatage.php";
+require_once "public/utile/formatage.php";
 
 class FrontAccueil
 {
