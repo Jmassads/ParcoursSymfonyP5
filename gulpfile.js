@@ -12,7 +12,7 @@ let path = {
 gulp.task("sassTask", function() {
     return gulp
         .src(path.src_sass)
-        .pipe(sourcemaps.init()) // initialize sourcemaps first
+        // .pipe(sourcemaps.init()) // initialize sourcemaps first
         .pipe(sass().on('error', sass.logError))
         // .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
         .pipe(gulp.dest('./public'))

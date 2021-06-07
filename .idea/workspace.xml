@@ -22,6 +22,7 @@
     <list default="true" id="3f72cef1-e66e-4ff1-9196-d67498625e98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/custom.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/custom.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/custom.scss" afterDir="false" />
     </list>
@@ -107,7 +108,7 @@
       <workItem from="1622974212557" duration="76000" />
       <workItem from="1622975054219" duration="12287000" />
       <workItem from="1622990906016" duration="94000" />
-      <workItem from="1623067808210" duration="1229000" />
+      <workItem from="1623067808210" duration="1517000" />
     </task>
     <servers />
   </component>
