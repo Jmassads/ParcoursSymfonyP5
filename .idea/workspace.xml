@@ -20,24 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f72cef1-e66e-4ff1-9196-d67498625e98" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/config/.htaccess" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/Helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/backend/Articles.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/backend/Articles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/backend/Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/backend/Comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/backend/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/backend/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/frontend/FrontAccueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/frontend/FrontAccueil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/frontend/FrontArticles.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/frontend/FrontArticles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Article.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Article.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Model.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Model.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/article.dao.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/article.dao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/adminArticlesAjout.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminArticlesAjout.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/headerLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/headerLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/commons/erreur.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/commons/erreur.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/front/accueil.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/accueil.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +104,7 @@
       <workItem from="1622974212557" duration="76000" />
       <workItem from="1622975054219" duration="12287000" />
       <workItem from="1622990906016" duration="94000" />
-      <workItem from="1623067808210" duration="2393000" />
+      <workItem from="1623067808210" duration="2518000" />
     </task>
     <servers />
   </component>
