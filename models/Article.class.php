@@ -149,5 +149,4 @@ class Article
     {
         $this->userImage = $userImage;
     }
-
 }

@@ -45,7 +45,4 @@ class Comments
         flash('comment_message', "Le commentaire a été supprimé");
         redirect('admin/commentaires');
     }
-
-
-
 }

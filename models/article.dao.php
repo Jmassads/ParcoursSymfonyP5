@@ -136,8 +136,8 @@ function deleteArticleFromBD($articleid)
     } else {
         return false;
     }
-
 }
+
 
 
 

@@ -48,5 +48,4 @@ class FrontArticles
 
         require "views/front/article.view.php";
     }
-
 }

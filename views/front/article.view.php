@@ -99,3 +99,4 @@
     </main>
 
 <?php include 'views/front/footer.php'; ?>
+
