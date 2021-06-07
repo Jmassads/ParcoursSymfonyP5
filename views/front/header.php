@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>starter-2020</title>
-    <link rel="shortcut icon" type="image/ico" href="<?php echo URL ?>public/img/favicon.ico">
+    <link rel="shortcut icon" type="image/ico" href="<?php echo URL ?>public/favicon.ico">
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">

@@ -20,25 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f72cef1-e66e-4ff1-9196-d67498625e98" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/backend/Articles.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/backend/Articles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/backend/Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/backend/Comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/frontend/FrontAccueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/frontend/FrontAccueil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/frontend/FrontArticles.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/frontend/FrontArticles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/custom.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/custom.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/utile/formatage.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/utile/formatage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/avatar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/footerAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/footerAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/back/headerAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/headerAdmin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/back/headerLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/headerLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/front/article.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/article.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/front/blog.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/blog.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/front/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/front/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,11 +64,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/img" />
       <recent name="$PROJECT_DIR$/src/img" />
       <recent name="$PROJECT_DIR$/controllers/backend" />
       <recent name="$PROJECT_DIR$/controllers/frontend" />
-      <recent name="$PROJECT_DIR$/views/front" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -123,7 +107,7 @@
       <workItem from="1622974212557" duration="76000" />
       <workItem from="1622975054219" duration="12287000" />
       <workItem from="1622990906016" duration="94000" />
-      <workItem from="1623067808210" duration="390000" />
+      <workItem from="1623067808210" duration="732000" />
     </task>
     <servers />
   </component>
@@ -169,13 +153,13 @@
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="420" y="81" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1622981247112" />
-    <state x="544" y="224" width="864" height="618" key="find.popup" timestamp="1623068175354">
+    <state x="544" y="224" width="864" height="618" key="find.popup" timestamp="1623068542439">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="446" y="-813" width="1104" height="749" key="find.popup/-279.-1057.1920.1015/0.23.1440.877@-279.-1057.1920.1015" timestamp="1618667444982" />
     <state x="446" y="-803" width="1104" height="779" key="find.popup/-279.-1057.1920.1057/0.23.1440.839@-279.-1057.1920.1057" timestamp="1618665392280" />
     <state x="544" y="223" width="604" height="490" key="find.popup/0.23.1440.831@0.23.1440.831" timestamp="1617542534371" />
-    <state x="544" y="224" width="864" height="618" key="find.popup/0.23.1440.835@0.23.1440.835" timestamp="1623068175354" />
+    <state x="544" y="224" width="864" height="618" key="find.popup/0.23.1440.835@0.23.1440.835" timestamp="1623068542439" />
     <state x="544" y="224" width="828" height="619" key="find.popup/0.23.1440.837@0.23.1440.837" timestamp="1618780474415" />
     <state x="544" y="224" width="828" height="619" key="find.popup/0.23.1440.838@0.23.1440.838" timestamp="1618736560135" />
     <state x="544" y="225" width="828" height="619" key="find.popup/0.23.1440.840@0.23.1440.840" timestamp="1618650727790" />
