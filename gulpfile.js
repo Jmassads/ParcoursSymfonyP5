@@ -14,7 +14,7 @@ gulp.task("sassTask", function() {
         .src(path.src_sass)
         .pipe(sourcemaps.init()) // initialize sourcemaps first
         .pipe(sass().on('error', sass.logError))
-        .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
+        // .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
         .pipe(gulp.dest('./public'))
 });
 
