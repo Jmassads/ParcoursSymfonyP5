@@ -20,17 +20,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f72cef1-e66e-4ff1-9196-d67498625e98" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controllers/backend/Categories.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/CategoryManager.class.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/docs/Julia_Assad_CV.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/back/adminCategories.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/back/adminCategoryAjout.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/back/adminCategoryModif.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/front/error.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/parcours_symfony_projet_5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/parcours_symfony_projet_5.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/Securite.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/Securite.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/backend/Articles.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/backend/Articles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/backend/Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/backend/Comments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/backend/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/backend/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/frontend/FrontAccueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/frontend/FrontAccueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/frontend/FrontArticles.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/frontend/FrontArticles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/custom.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/custom.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/utile/formatage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/article.dao.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/remove.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/users.dao.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/back/adminAccueil.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminAccueil.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/back/adminArticleModif.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminArticleModif.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/back/adminArticles.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminArticles.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/back/adminComment.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminComment.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/back/adminComments.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminComments.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/back/adminUsers.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminUsers.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/back/headerAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/headerAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/front/accueil.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/accueil.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/front/article.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/article.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/front/blog.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/blog.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/front/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/front/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/front/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/menu.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="e7b94e16-3abc-4436-a7e3-711a403c8f5b" />
@@ -44,10 +81,16 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/views/front/menu.php" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
       <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
     </include_path>
   </component>
   <component name="ProjectId" id="1qfrie4PW39KHvTQvabbWKAMsJY" />
@@ -64,11 +107,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/docs" />
       <recent name="$PROJECT_DIR$/src/img" />
       <recent name="$PROJECT_DIR$/controllers/backend" />
       <recent name="$PROJECT_DIR$/controllers/frontend" />
       <recent name="$PROJECT_DIR$/views/front" />
-      <recent name="$PROJECT_DIR$/controllers" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -107,6 +150,17 @@
       <workItem from="1622974212557" duration="76000" />
       <workItem from="1622975054219" duration="12287000" />
       <workItem from="1622990906016" duration="94000" />
+      <workItem from="1623086724232" duration="6228000" />
+      <workItem from="1623148120577" duration="1103000" />
+      <workItem from="1624092630005" duration="408000" />
+      <workItem from="1624093081627" duration="8703000" />
+      <workItem from="1624466267587" duration="597000" />
+      <workItem from="1624532296538" duration="671000" />
+      <workItem from="1625038318858" duration="1651000" />
+      <workItem from="1625133706933" duration="804000" />
+      <workItem from="1625135344255" duration="1153000" />
+      <workItem from="1625137447209" duration="525000" />
+      <workItem from="1625658834874" duration="5798000" />
     </task>
     <servers />
   </component>
@@ -134,15 +188,20 @@
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="506" y="104" key="#PHP_CodeSniffer/0.23.1440.835@0.23.1440.835" timestamp="1622981245350" />
+    <state x="257" y="140" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625659245027">
+      <screen x="0" y="23" width="1440" height="835" />
+    </state>
+    <state x="257" y="140" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.835@0.23.1440.835" timestamp="1625659245027" />
     <state x="596" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1621413248951">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="516" y="-954" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-279.-1057.1920.1057/0.23.1440.835@-279.-1057.1920.1057" timestamp="1620728535149" />
     <state x="596" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.835@0.23.1440.835" timestamp="1621413248951" />
-    <state x="591" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618814032157">
-      <screen x="0" y="23" width="1440" height="837" />
+    <state x="591" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1625658984308">
+      <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="591" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.831@0.23.1440.831" timestamp="1617541605702" />
+    <state x="591" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.835@0.23.1440.835" timestamp="1625658984308" />
     <state x="591" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.837@0.23.1440.837" timestamp="1618814032156" />
     <state x="783" y="416" width="491" height="249" key="ComposerInitDialogKey" timestamp="1622980283590">
       <screen x="0" y="23" width="1440" height="835" />
@@ -152,13 +211,13 @@
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="420" y="81" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1622981247112" />
-    <state x="544" y="224" width="828" height="618" key="find.popup" timestamp="1622989862848">
+    <state x="544" y="224" width="828" height="618" key="find.popup" timestamp="1625662605968">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="446" y="-813" width="1104" height="749" key="find.popup/-279.-1057.1920.1015/0.23.1440.877@-279.-1057.1920.1015" timestamp="1618667444982" />
     <state x="446" y="-803" width="1104" height="779" key="find.popup/-279.-1057.1920.1057/0.23.1440.839@-279.-1057.1920.1057" timestamp="1618665392280" />
     <state x="544" y="223" width="604" height="490" key="find.popup/0.23.1440.831@0.23.1440.831" timestamp="1617542534371" />
-    <state x="544" y="224" width="828" height="618" key="find.popup/0.23.1440.835@0.23.1440.835" timestamp="1622989862848" />
+    <state x="544" y="224" width="828" height="618" key="find.popup/0.23.1440.835@0.23.1440.835" timestamp="1625662605968" />
     <state x="544" y="224" width="828" height="619" key="find.popup/0.23.1440.837@0.23.1440.837" timestamp="1618780474415" />
     <state x="544" y="224" width="828" height="619" key="find.popup/0.23.1440.838@0.23.1440.838" timestamp="1618736560135" />
     <state x="544" y="225" width="828" height="619" key="find.popup/0.23.1440.840@0.23.1440.840" timestamp="1618650727790" />

@@ -1,9 +1,11 @@
 <?php
 
-require_once "dist/utile/formatage.php";
-
 class FrontAccueil
 {
+    /**
+     * On affiche la page d'accueil
+     * On fait fonctionner le formulaire de contact avec a fonction PHP mail()
+     */
     public function afficherPageAccueil()
     {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {

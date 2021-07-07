@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light px-4 py-4 ">
     <a class="navbar-brand text-4xl text-decoration-none text-dark" href="<?php echo URL ?>">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-prompt inline" width="24"
@@ -35,5 +34,3 @@
         </ul>
     </div>
 </nav>
-
-

@@ -31,12 +31,23 @@ $(document).ready(function() {
         }
     });
 
+    $(".btnSupCategory").click(function(e){
+        e.preventDefault();
+        console.log($(this));
+        var idCategory = $(this).parents('tr').find("td:eq(0)").text();
+        var category = $(this).parents('tr').find("td:eq(1)").text();
+        if (confirm("Voulez-vous supprimer la categorie #" + idCategory + ' - ' + category)) {
+            document.location.href = "categories/suppressionCategory/" + idCategory;
+        }
+    });
+
+
     $(".btnSupComment").click(function(e){
         e.preventDefault();
         console.log($(this));
         var idComment = $('.comment_id').text();
         if (confirm("Voulez-vous supprimer le commentaire #" + idComment + "?")) {
-            document.location.href = "commentaires/suppressionCommentaire/" + idComment;
+            document.location.href = "http://localhost:8888/blog/admin/commentaires/suppressionCommentaire/" + idComment;
         }
     });
 

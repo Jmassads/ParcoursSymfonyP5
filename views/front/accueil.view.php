@@ -1,6 +1,5 @@
 <?php include 'views/front/header.php'; ?>
 
-
     <!--    ABOUT SECTION-->
     <section id="about" class="px-4 py-4">
         <div>
@@ -218,24 +217,12 @@
                                         </a>
                                     </div>
                                     <div class="text-xl">
-                                        <a class="px-2" href="#">
-                                            <ion-icon name="logo-youtube"
-                                                      class="text-gray hover:text-red-600 md hydrated"
-                                                      role="img"
-                                                      aria-label="logo youtube"></ion-icon>
-                                        </a>
-                                        <a class="px-2" href="#">
-                                            <ion-icon name="logo-twitter"
-                                                      class="text-gray hover:text-blue-500 md hydrated"
-                                                      role="img"
-                                                      aria-label="logo twitter"></ion-icon>
-                                        </a>
-                                        <a class="px-2" href="#">
+                                        <a target="_blank" class="px-2" href="https://www.linkedin.com/in/julia-assad/">
                                             <ion-icon name="logo-linkedin"
                                                       class="text-gray hover:text-blue-700 md hydrated"
                                                       role="img" aria-label="logo linkedin"></ion-icon>
                                         </a>
-                                        <a class="px-2" href="#">
+                                        <a target="_blank" class="px-2" href="https://github.com/Jmassads">
                                             <ion-icon name="logo-github"
                                                       class="text-gray hover:text-blue-500 md hydrated"
                                                       role="img"
@@ -264,7 +251,8 @@
                 </div>
             </div>
             <div class="col-lg-5 d-flex justify-content-center align-items-center">
-                <a href="" class="btn-tart-orange text-white px-4 py-2">Télécharger mon cv</a>
+                <a href="<?php echo URL; ?>/src/docs/Julia_Assad_CV.pdf" download
+                   class="btn-tart-orange text-white px-4 py-2">Télécharger mon cv</a>
             </div>
         </div>
     </section>
@@ -483,6 +471,5 @@
     </section>
 
 <?php flash('contact_message'); ?>
-
 
 <?php include 'views/front/footer.php'; ?>

@@ -25,7 +25,7 @@
             <tr>
                 <td class="article" scope="row"><?php echo $article->getID(); ?></td>
                 <td class="articleTitle"><?php echo $article->getTitre(); ?></td>
-                <td><?php echo $article->getExcerpt(); ?></td>
+                <td><?php echo htmlspecialchars_decode($article->getExcerpt()); ?></td>
                 <td><?php echo date('d-m-Y', strtotime($article->getDateCreation())); ?></td>
                 <td> <?php echo date('d-m-Y', strtotime($article->getDateModification())); ?></td>
                 <td><?php echo $article->getCategoryTitle(); ?></td>

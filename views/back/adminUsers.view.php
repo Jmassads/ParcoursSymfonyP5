@@ -13,7 +13,7 @@
         </tr>
         </thead>
         <tbody>
-        <?php foreach($users as $user):?>
+        <?php foreach ($users as $user) :?>
             <tr>
                 <td><?php echo $user['user_id'];?></td>
                 <td><?php echo $user['user_firstname'];?></td>

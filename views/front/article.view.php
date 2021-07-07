@@ -2,8 +2,8 @@
 
 <?php flash('comment_message'); ?>
 
+    <!--    PAGE D'UN ARTICLE-->
     <main class="pt-4">
-
         <section class="px-4">
             <div class="d-flex flex-column sm:flex-row flex-wrap items-center">
                 <h2 class="text-4xl pr-4">
@@ -27,9 +27,9 @@
                         Julia Assad
                     </div>
                     <div class="text-sm">
-                        <?php if (empty($article->getDateModification())): ?>
+                        <?php if (empty($article->getDateModification())) : ?>
                             <?php echo date('d-m-Y', strtotime($article->getDateCreation())); ?>
-                        <?php else: ?>
+                        <?php else : ?>
                             <?php echo date('d-m-Y', strtotime($article->getDateModification())); ?>
                         <?php endif; ?>
                     </div>
@@ -73,29 +73,21 @@
         </section>
         <section class="px-4">
             <h2 class="pb-4">Commentaires</h2>
-            <?php foreach ($commentaires as $commentaire): ?>
+            <?php foreach ($commentaires as $commentaire) : ?>
                 <div class="be-comment">
-
                     <div class="be-comment-content">
-			<span class="be-comment-name">
-				<a href="blog-detail-2.html">
+                        <span class="be-comment-name"><a href="blog-detail-2.html">
                     <?php echo $commentaire['user_lastname'] . ' ' . $commentaire['user_firstname']; ?>
-                </a>
-			</span>
+                        </a></span>
                         <span class="be-comment-time">
-				<i class="fa fa-clock-o"></i>
-				<?php echo date('d-m-Y', strtotime($commentaire['date_posted'])); ?>
-			</span>
+                            <i class="fa fa-clock-o"></i><?php echo date('d-m-Y', strtotime($commentaire['date_posted'])); ?></span>
                         <p class="be-comment-text">
                             <?php echo $commentaire['contenu']; ?>
                         </p>
                     </div>
                 </div>
             <?php endforeach; ?>
-
-
         </section>
-
     </main>
 
 <?php include 'views/front/footer.php'; ?>

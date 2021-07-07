@@ -23,8 +23,15 @@
                     <td><?php echo $comment['contenu']; ?></td>
                     <td><?php echo $comment['user_firstname'] . ' ' . $comment['user_lastname']; ?></td>
                     <td><?php echo $comment['article_title']; ?></td>
-                    <td><?php echo date('d-m-Y', strtotime($comment['date_posted'])); ?> à <?php echo date("H:i", strtotime($comment['date_posted'])); ?></td>
-                    <td><?php echo $comment['comment_status']; ?></td>
+                    <td><?php echo date('d-m-Y', strtotime($comment['date_posted'])); ?>
+                        à <?php echo date("H:i", strtotime($comment['date_posted'])); ?></td>
+                    <td>
+                        <?php if ($comment['comment_status'] == 1) : ?>
+                            <?php echo "Publié"; ?>
+                        <?php else : ?>
+                            <?php echo "Non publié"; ?>
+                        <?php endif; ?>
+                    </td>
                     <td>
                         <a href="<?= URL ?>admin/commentaires/afficherCommentaire/<?= $comment['commentaire_id']; ?>"
                            class="btn btn-outline-blue">Voir</a>

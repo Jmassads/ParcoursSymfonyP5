@@ -14,6 +14,7 @@
 </head>
 <body>
 
+<!--    HEADER-->
 <header class="bg-white fixed-top">
     <?php include 'menu.php';?>
 </header>

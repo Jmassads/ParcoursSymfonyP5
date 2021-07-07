@@ -1,15 +1,18 @@
 </main>
 
+<!--    FOOTER-->
 <footer class="footer bg-white px-4 border-top">
     <div class="row">
         <div class="mt-4">
             <a href="<?php echo URL ?>login">Connexion</a>
+
         </div>
     </div>
     <div class="mx-auto">
         <div class="d-flex flex-column items-center">
             <div class="text-center py-4">
                 <p class="text-sm fw-bold mb-2">© 2021 by Julia Assad</p>
+                <img src="https://insight.symfony.com/projects/ba5a828e-45d4-4a81-b06c-3a83c15e9d9b/big.svg" alt="">
             </div>
         </div>
     </div>

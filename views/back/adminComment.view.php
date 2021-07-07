@@ -18,7 +18,7 @@
 <div class="px-4 py-4">
     <div class="d-flex justify-content-end">
         <a href="<?= URL ?>admin/commentaires/accepterCommentaire/<?= $comment['commentaire_id']; ?>" class="btn btn-outline-info me-2" value="Accepter">Accepter</a>
-        <a href="<?= URL ?>admin/commentaires/suppressionCommentaire/<?= $comment['commentaire_id']; ?>" class="btnSupComment btn btn-outline-tart-orange" >Supprimer</a>
+        <a href="" class="btnSupComment btn btn-outline-tart-orange" >Supprimer</a>
     </div>
 </div>
 

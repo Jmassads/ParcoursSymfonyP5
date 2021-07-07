@@ -4,18 +4,11 @@ require_once "models/UsersManager.class.php";
 
 class Users
 {
-   
     /**
-     * @var ArticleManager
+     * On instancie les classes UsersManager, ArticleManager et CommentManager
      */
     private $articleManager;
-    /**
-     * @var CommentManager
-     */
     private $CommentManager;
-    /**
-     * @var usersManager
-     */
     private $userManager;
 
     public function __construct()
@@ -25,6 +18,9 @@ class Users
         $this->CommentManager = new CommentManager;
     }
 
+    /**
+     * On vérifie le login et on fait une redirection vers l'admin ou le blog en fonction du role de l'utilisateur
+     */
     public function getPageLogin()
     {
 
@@ -73,6 +69,9 @@ class Users
         require_once "views/back/login.view.php";
     }
 
+    /**
+     * Cette fonction permet de se deconnecter
+     */
     public function logout()
     {
         if (isset($_POST['deconnexion']) && $_POST['deconnexion'] === "true") {
@@ -81,6 +80,9 @@ class Users
         }
     }
 
+    /**
+     * On affiche le nombre d'articles et de commentaires sur le dashboard
+     */
     public function getPageAdmin()
     {
         $numberArticles = $this->articleManager->countArticles();

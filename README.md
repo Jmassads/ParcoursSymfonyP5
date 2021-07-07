@@ -25,6 +25,17 @@ Vous développerez une partie administration qui devra être accessible uniqueme
 
 Les pages d’administration seront donc accessibles sur conditions et vous veillerez à la sécurité de la partie administration.
 
+------------
+
+##Installation
+
+Etape 1 : Cloner le Repositary
+
+Etape 2 : Créer une base de données et importer le fichier mon_site.sql
+
+Etape 3 : Remplir le fichier App/Config/config.exemple.php avec les accès à votre BDD.
+
+Etape 4 : Remplir le fichier config.config.php avec les accès à votre compte email.
 
 
               

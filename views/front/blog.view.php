@@ -1,5 +1,6 @@
 <?php include 'views/front/header.php';?>
 
+<!--    SECTION DES ARTICLES-->
     <section id="blog" class="px-4 py-4">
         <h2 class="text-4xl text-tart-orange">Mon blog
             <span class="text-black">.</span>
@@ -9,7 +10,7 @@
             </p>
         </div>
         <div class="row ">
-            <?php foreach ($articles as $article): ?>
+            <?php foreach ($articles as $article) : ?>
                 <div class="col-sm-6 col-md-4 mb-3">
                     <div class="border bg-white overflow-hidden h-100 p-3">
                         <div class="post-categories mb-2">

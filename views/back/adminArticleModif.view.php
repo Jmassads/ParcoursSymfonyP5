@@ -14,8 +14,7 @@
             <label class="form-label" for="categoryArticle">Catégorie de l'article:</label>
             <select class="form-select" name="categoryArticle" id="categoryArticle">
                 <option selected>Catégorie...</option>
-                <?php foreach ($categoriesArticle as $categorie): ?>
-
+                <?php foreach ($categoriesArticle as $categorie) : ?>
                     <option value="<?php echo $categorie['category_id'] ?>"
                         <?php if ($article->getCategory() == $categorie['category_id']) echo "selected"; ?>>
                         <?php echo $categorie['category_title']; ?>
@@ -26,12 +25,12 @@
         </div>
         <div class="mb-4">
             <label for="articleExcerpt">Excerpt de l'article</label>
-            <textarea class="form-control" id="articleExcerpt" name="articleExcerpt"
+            <textarea class="form-control textarea" id="articleExcerpt" name="articleExcerpt"
                       style="height: 100px"><?php echo $article->getExcerpt(); ?></textarea>
         </div>
         <div class="mb-4">
             <label for="articleContent">Contenu de l'article</label>
-            <textarea class="form-control" id="articleContent" name="articleContent"
+            <textarea class="form-control textarea" id="articleContent" name="articleContent"
                       style="height: 100px"><?php echo $article->getContent(); ?></textarea>
         </div>
         <div class="mb-4">

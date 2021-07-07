@@ -2,16 +2,11 @@
 
 require_once "models/ArticleManager.class.php";
 require_once "models/CommentManager.class.php";
-require_once "models/users.dao.php";
-require_once "dist/utile/formatage.php";
 
 class FrontArticles
 {
 
     private $articleManager;
-    /**
-     * @var CommentManager
-     */
     private $commentManager;
 
     public function __construct()
