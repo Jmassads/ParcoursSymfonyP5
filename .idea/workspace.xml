@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f72cef1-e66e-4ff1-9196-d67498625e98" name="Default Changelist" comment="Merge branch 'main' into oop&#10;&#10;# Conflicts:&#10;#&#9;.idea/inspectionProfiles/Project_Default.xml&#10;#&#9;.idea/parcours_symfony_projet_5.iml&#10;#&#9;.idea/php.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;controllers/backend/Articles.php&#10;#&#9;controllers/backend/Comments.php&#10;#&#9;controllers/frontend/FrontAccueil.php&#10;#&#9;controllers/frontend/FrontArticles.php&#10;#&#9;dist/custom.css.map&#10;#&#9;models/article.dao.php&#10;#&#9;public/utile/formatage.php&#10;#&#9;views/back/headerAdmin.php&#10;#&#9;views/front/accueil.view.php&#10;#&#9;views/front/header.php">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/frontend/FrontArticles.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/frontend/FrontArticles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +125,7 @@
       <workItem from="1625658834874" duration="5798000" />
       <workItem from="1625666637059" duration="435000" />
       <workItem from="1625667074815" duration="83000" />
-      <workItem from="1625667159479" duration="386000" />
+      <workItem from="1625667159479" duration="804000" />
     </task>
     <servers />
   </component>
