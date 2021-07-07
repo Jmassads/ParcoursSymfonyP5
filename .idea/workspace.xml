@@ -19,48 +19,48 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f72cef1-e66e-4ff1-9196-d67498625e98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/backend/Categories.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/CategoryManager.class.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/docs/Julia_Assad_CV.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/back/adminCategories.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/back/adminCategoryAjout.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/back/adminCategoryModif.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/front/error.view.php" afterDir="false" />
+    <list default="true" id="3f72cef1-e66e-4ff1-9196-d67498625e98" name="Default Changelist" comment="Merge branch 'main' into oop&#10;&#10;# Conflicts:&#10;#&#9;.idea/inspectionProfiles/Project_Default.xml&#10;#&#9;.idea/parcours_symfony_projet_5.iml&#10;#&#9;.idea/php.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;controllers/backend/Articles.php&#10;#&#9;controllers/backend/Comments.php&#10;#&#9;controllers/frontend/FrontAccueil.php&#10;#&#9;controllers/frontend/FrontArticles.php&#10;#&#9;dist/custom.css.map&#10;#&#9;models/article.dao.php&#10;#&#9;public/utile/formatage.php&#10;#&#9;views/back/headerAdmin.php&#10;#&#9;views/front/accueil.view.php&#10;#&#9;views/front/header.php">
+      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/parcours_symfony_projet_5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/parcours_symfony_projet_5.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/config/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/Helper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/Securite.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/Securite.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/backend/Articles.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/backend/Articles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/backend/Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/backend/Comments.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/backend/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/backend/Users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/frontend/FrontAccueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/frontend/FrontAccueil.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/frontend/FrontArticles.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/frontend/FrontArticles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/custom.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/custom.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/utile/formatage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/article.dao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/remove.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/users.dao.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/adminAccueil.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminAccueil.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/adminArticleModif.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminArticleModif.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/adminArticles.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminArticles.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/adminComment.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminComment.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/adminComments.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminComments.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/adminUsers.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminUsers.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Article.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Article.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Model.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Model.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/article.dao.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/article.dao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/utile/formatage.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/utile/formatage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/avatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/back/adminArticlesAjout.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminArticlesAjout.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/back/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/back/footerAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/footerAdmin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/back/headerAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/headerAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/back/headerLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/headerLogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/commons/erreur.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/commons/erreur.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/front/accueil.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/accueil.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/front/article.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/article.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/front/blog.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/blog.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/front/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/front/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/front/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/menu.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,6 +161,9 @@
       <workItem from="1625135344255" duration="1153000" />
       <workItem from="1625137447209" duration="525000" />
       <workItem from="1625658834874" duration="5798000" />
+      <workItem from="1625666637059" duration="435000" />
+      <workItem from="1625667074815" duration="83000" />
+      <workItem from="1625667159479" duration="150000" />
     </task>
     <servers />
   </component>
@@ -211,6 +214,10 @@
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="420" y="81" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1622981247112" />
+    <state x="440" y="150" key="Vcs.Push.Dialog.v2" timestamp="1625667141577">
+      <screen x="0" y="23" width="1440" height="835" />
+    </state>
+    <state x="440" y="150" key="Vcs.Push.Dialog.v2/0.23.1440.835@0.23.1440.835" timestamp="1625667141577" />
     <state x="544" y="224" width="828" height="618" key="find.popup" timestamp="1625662605968">
       <screen x="0" y="23" width="1440" height="835" />
     </state>

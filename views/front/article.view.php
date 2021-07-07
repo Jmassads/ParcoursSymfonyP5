@@ -19,7 +19,7 @@
             <div class="mt-3 d-flex items-center">
                 <div class="">
                     <img class="w-10 rounded-circle"
-                         src="<?php echo URL ?>src/img/avatar.png"
+                         src="<?php echo URL ?>public/img/avatar.png"
                          alt="">
                 </div>
                 <div class="ms-3">
@@ -91,3 +91,4 @@
     </main>
 
 <?php include 'views/front/footer.php'; ?>
+

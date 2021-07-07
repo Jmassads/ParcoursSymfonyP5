@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+require_once "public/utile/formatage.php";
+
+>>>>>>> main
 class FrontAccueil
 {
     /**

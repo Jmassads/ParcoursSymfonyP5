@@ -1,12 +1,14 @@
 <?php
 
 require_once "models/CommentManager.class.php";
+require_once "public/utile/formatage.php";
 
 
 class Comments
 {
 
     private $CommentManager;
+
     /**
      * On instancie la classe CommentManager (model)
      */
@@ -54,5 +56,4 @@ class Comments
         flash('comment_message', "Le commentaire a été supprimé");
         redirect('admin/commentaires');
     }
-
 }

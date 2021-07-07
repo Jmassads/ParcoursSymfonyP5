@@ -139,5 +139,4 @@ class Users
         $this->userManager->suppressionUserBD($id);
         redirect('admin/users');
     }
-
 }

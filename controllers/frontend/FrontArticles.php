@@ -2,6 +2,11 @@
 
 require_once "models/ArticleManager.class.php";
 require_once "models/CommentManager.class.php";
+<<<<<<< HEAD
+=======
+require_once "models/users.dao.php";
+require_once "public/utile/formatage.php";
+>>>>>>> main
 
 class FrontArticles
 {
@@ -43,5 +48,4 @@ class FrontArticles
 
         require "views/front/article.view.php";
     }
-
 }

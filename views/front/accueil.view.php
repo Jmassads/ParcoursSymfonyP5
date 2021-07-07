@@ -472,4 +472,10 @@
 
 <?php flash('contact_message'); ?>
 
+<<<<<<< HEAD
 <?php include 'views/front/footer.php'; ?>
+=======
+
+<?php include 'views/front/footer.php'; ?>
+
+>>>>>>> main
