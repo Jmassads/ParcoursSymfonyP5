@@ -23,6 +23,7 @@ Voici la liste des pages qui devront être accessibles depuis votre site web :
 
 Vous développerez une partie administration qui devra être accessible uniquement aux utilisateurs inscrits et validés.
 
+
 Les pages d’administration seront donc accessibles sur conditions et vous veillerez à la sécurité de la partie administration.
 
 ------------
