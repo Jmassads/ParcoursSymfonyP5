@@ -26,8 +26,6 @@ Vous développerez une partie administration qui devra être accessible uniqueme
 
 Les pages d’administration seront donc accessibles sur conditions et vous veillerez à la sécurité de la partie administration.
 
-------------
-
 ##Installation
 
 Etape 1 : Cloner le Repositary
