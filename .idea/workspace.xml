@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3f72cef1-e66e-4ff1-9196-d67498625e98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/front/accueil.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/accueil.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="mvc" />
+        <entry key="$PROJECT_DIR$" value="fix_project" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -168,27 +168,33 @@
     <state x="591" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1625658984308">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
-    <state x="591" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.831@0.23.1440.831" timestamp="1617541605702" />
     <state x="591" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.835@0.23.1440.835" timestamp="1625658984308" />
     <state x="591" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.837@0.23.1440.837" timestamp="1618814032156" />
     <state x="783" y="416" width="491" height="249" key="ComposerInitDialogKey" timestamp="1622980283590">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="783" y="416" width="491" height="249" key="ComposerInitDialogKey/0.23.1440.835@0.23.1440.835" timestamp="1622980283590" />
+    <state x="162" y="98" key="MergeDialog" timestamp="1626260698702">
+      <screen x="0" y="23" width="1440" height="835" />
+    </state>
+    <state x="162" y="98" key="MergeDialog/0.23.1440.835@0.23.1440.835" timestamp="1626260698702" />
     <state x="420" y="81" key="SettingsEditor" timestamp="1622981247112">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="420" y="81" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1622981247112" />
-    <state x="544" y="224" width="828" height="618" key="find.popup" timestamp="1625662605968">
+    <state x="544" y="224" width="828" height="618" key="find.popup" timestamp="1626260937274">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="446" y="-813" width="1104" height="749" key="find.popup/-279.-1057.1920.1015/0.23.1440.877@-279.-1057.1920.1015" timestamp="1618667444982" />
     <state x="446" y="-803" width="1104" height="779" key="find.popup/-279.-1057.1920.1057/0.23.1440.839@-279.-1057.1920.1057" timestamp="1618665392280" />
-    <state x="544" y="223" width="604" height="490" key="find.popup/0.23.1440.831@0.23.1440.831" timestamp="1617542534371" />
-    <state x="544" y="224" width="828" height="618" key="find.popup/0.23.1440.835@0.23.1440.835" timestamp="1625662605968" />
+    <state x="544" y="224" width="828" height="618" key="find.popup/0.23.1440.835@0.23.1440.835" timestamp="1626260937274" />
     <state x="544" y="224" width="828" height="619" key="find.popup/0.23.1440.837@0.23.1440.837" timestamp="1618780474415" />
     <state x="544" y="224" width="828" height="619" key="find.popup/0.23.1440.838@0.23.1440.838" timestamp="1618736560135" />
     <state x="544" y="225" width="828" height="619" key="find.popup/0.23.1440.840@0.23.1440.840" timestamp="1618650727790" />
+    <state x="638" y="164" key="git4idea.branch.GitSmartOperationDialog" timestamp="1626260658058">
+      <screen x="0" y="23" width="1440" height="835" />
+    </state>
+    <state x="638" y="164" key="git4idea.branch.GitSmartOperationDialog/0.23.1440.835@0.23.1440.835" timestamp="1626260658058" />
     <state x="480" y="184" width="670" height="676" key="search.everywhere.popup" timestamp="1618764522842">
       <screen x="0" y="23" width="1440" height="837" />
     </state>

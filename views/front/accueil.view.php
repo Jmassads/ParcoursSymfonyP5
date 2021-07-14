@@ -9,8 +9,7 @@
                 </h2>
             </div>
 
-            <p class="pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, blanditiis
-                cumque</p>
+            <p class="pt-2">Ayant une passion pour l'informatique, j'ai choisi de faire une reconversion professionelle en 2016. Je me suis d'abord formée en autodidacte puis j'ai suivi le parcours 'Développeur Web Junior' chez Openclassrooms</p>
         </div>
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-7 splide mx-auto text-center px-10 py-4">
