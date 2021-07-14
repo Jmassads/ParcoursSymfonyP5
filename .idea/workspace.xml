@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3f72cef1-e66e-4ff1-9196-d67498625e98" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="e7b94e16-3abc-4436-a7e3-711a403c8f5b" />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="mvc" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/views/front/menu.php" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1qfrie4PW39KHvTQvabbWKAMsJY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.php.quality.tools" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/docs" />
+      <recent name="$PROJECT_DIR$/src/img" />
+      <recent name="$PROJECT_DIR$/controllers/backend" />
+      <recent name="$PROJECT_DIR$/controllers/frontend" />
+      <recent name="$PROJECT_DIR$/views/front" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f72cef1-e66e-4ff1-9196-d67498625e98" name="Default Changelist" comment="" />
+      <created>1617481613973</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617481613973</updated>
+      <workItem from="1617481615664" duration="33228000" />
+      <workItem from="1617776137287" duration="12502000" />
+      <workItem from="1618643740534" duration="50299000" />
+      <workItem from="1618817055839" duration="3817000" />
+      <workItem from="1619003459505" duration="18454000" />
+      <workItem from="1619103103881" duration="337000" />
+      <workItem from="1619287664629" duration="1351000" />
+      <workItem from="1619290765573" duration="1100000" />
+      <workItem from="1619291938642" duration="250000" />
+      <workItem from="1619292207514" duration="9000" />
+      <workItem from="1619292248127" duration="3825000" />
+      <workItem from="1620471798223" duration="35639000" />
+      <workItem from="1620728317711" duration="1217000" />
+      <workItem from="1621413200194" duration="718000" />
+      <workItem from="1621933686365" duration="23832000" />
+      <workItem from="1622894577730" duration="21195000" />
+      <workItem from="1622971185991" duration="15000" />
+      <workItem from="1622971203406" duration="577000" />
+      <workItem from="1622972419668" duration="68000" />
+      <workItem from="1622972554329" duration="85000" />
+      <workItem from="1622972663652" duration="52000" />
+      <workItem from="1622972959998" duration="8000" />
+      <workItem from="1622972970429" duration="132000" />
+      <workItem from="1622973107587" duration="30000" />
+      <workItem from="1622973576516" duration="191000" />
+      <workItem from="1622974212557" duration="76000" />
+      <workItem from="1622975054219" duration="12287000" />
+      <workItem from="1622990906016" duration="94000" />
+      <workItem from="1623086724232" duration="6228000" />
+      <workItem from="1623148120577" duration="1103000" />
+      <workItem from="1624092630005" duration="408000" />
+      <workItem from="1624093081627" duration="8703000" />
+      <workItem from="1624466267587" duration="597000" />
+      <workItem from="1624532296538" duration="671000" />
+      <workItem from="1625038318858" duration="1651000" />
+      <workItem from="1625133706933" duration="804000" />
+      <workItem from="1625135344255" duration="1153000" />
+      <workItem from="1625137447209" duration="525000" />
+      <workItem from="1625658834874" duration="5798000" />
+      <workItem from="1625681608891" duration="1054000" />
+      <workItem from="1625742450023" duration="232000" />
+      <workItem from="1626259743438" duration="213000" />
+      <workItem from="1626259960108" duration="85000" />
+      <workItem from="1626260047900" duration="77000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="616" y="182" key="#CLI_Interpreters" timestamp="1622977971016">
+      <screen x="0" y="23" width="1440" height="835" />
+    </state>
+    <state x="616" y="182" key="#CLI_Interpreters/0.23.1440.835@0.23.1440.835" timestamp="1622977971016" />
+    <state x="506" y="104" key="#PHP_CodeSniffer" timestamp="1622981245350">
+      <screen x="0" y="23" width="1440" height="835" />
+    </state>
+    <state x="506" y="104" key="#PHP_CodeSniffer/0.23.1440.835@0.23.1440.835" timestamp="1622981245350" />
+    <state x="257" y="140" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625659245027">
+      <screen x="0" y="23" width="1440" height="835" />
+    </state>
+    <state x="257" y="140" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.835@0.23.1440.835" timestamp="1625659245027" />
+    <state x="596" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1621413248951">
+      <screen x="0" y="23" width="1440" height="835" />
+    </state>
+    <state x="516" y="-954" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-279.-1057.1920.1057/0.23.1440.835@-279.-1057.1920.1057" timestamp="1620728535149" />
+    <state x="596" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.835@0.23.1440.835" timestamp="1621413248951" />
+    <state x="591" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1625658984308">
+      <screen x="0" y="23" width="1440" height="835" />
+    </state>
+    <state x="591" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.831@0.23.1440.831" timestamp="1617541605702" />
+    <state x="591" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.835@0.23.1440.835" timestamp="1625658984308" />
+    <state x="591" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.837@0.23.1440.837" timestamp="1618814032156" />
+    <state x="783" y="416" width="491" height="249" key="ComposerInitDialogKey" timestamp="1622980283590">
+      <screen x="0" y="23" width="1440" height="835" />
+    </state>
+    <state x="783" y="416" width="491" height="249" key="ComposerInitDialogKey/0.23.1440.835@0.23.1440.835" timestamp="1622980283590" />
+    <state x="420" y="81" key="SettingsEditor" timestamp="1622981247112">
+      <screen x="0" y="23" width="1440" height="835" />
+    </state>
+    <state x="420" y="81" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1622981247112" />
+    <state x="544" y="224" width="828" height="618" key="find.popup" timestamp="1625662605968">
+      <screen x="0" y="23" width="1440" height="835" />
+    </state>
+    <state x="446" y="-813" width="1104" height="749" key="find.popup/-279.-1057.1920.1015/0.23.1440.877@-279.-1057.1920.1015" timestamp="1618667444982" />
+    <state x="446" y="-803" width="1104" height="779" key="find.popup/-279.-1057.1920.1057/0.23.1440.839@-279.-1057.1920.1057" timestamp="1618665392280" />
+    <state x="544" y="223" width="604" height="490" key="find.popup/0.23.1440.831@0.23.1440.831" timestamp="1617542534371" />
+    <state x="544" y="224" width="828" height="618" key="find.popup/0.23.1440.835@0.23.1440.835" timestamp="1625662605968" />
+    <state x="544" y="224" width="828" height="619" key="find.popup/0.23.1440.837@0.23.1440.837" timestamp="1618780474415" />
+    <state x="544" y="224" width="828" height="619" key="find.popup/0.23.1440.838@0.23.1440.838" timestamp="1618736560135" />
+    <state x="544" y="225" width="828" height="619" key="find.popup/0.23.1440.840@0.23.1440.840" timestamp="1618650727790" />
+    <state x="480" y="184" width="670" height="676" key="search.everywhere.popup" timestamp="1618764522842">
+      <screen x="0" y="23" width="1440" height="837" />
+    </state>
+    <state x="480" y="184" width="670" height="676" key="search.everywhere.popup/0.23.1440.837@0.23.1440.837" timestamp="1618764522842" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/models/UsersManager.class.php</url>
+          <line>6</line>
+          <properties>
+            <option name="className" value="\ArticleManager" />
+            <option name="methodName" value="ajoutArticle" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
