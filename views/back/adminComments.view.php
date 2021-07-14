@@ -17,7 +17,6 @@
             </tr>
             </thead>
             <tbody>
-            <?php print_r($comments);?>
             <?php foreach ($comments as $comment): ?>
                 <tr>
                     <td><?php echo $comment['commentaire_id']; ?></td>

@@ -21,7 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3f72cef1-e66e-4ff1-9196-d67498625e98" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/front/accueil.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/accueil.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/custom.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/custom.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/back/adminComments.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminComments.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/front/error.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/error.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,12 +186,12 @@
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="420" y="81" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1622981247112" />
-    <state x="544" y="224" width="828" height="618" key="find.popup" timestamp="1626260937274">
+    <state x="544" y="224" width="828" height="618" key="find.popup" timestamp="1626279306282">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="446" y="-813" width="1104" height="749" key="find.popup/-279.-1057.1920.1015/0.23.1440.877@-279.-1057.1920.1015" timestamp="1618667444982" />
     <state x="446" y="-803" width="1104" height="779" key="find.popup/-279.-1057.1920.1057/0.23.1440.839@-279.-1057.1920.1057" timestamp="1618665392280" />
-    <state x="544" y="224" width="828" height="618" key="find.popup/0.23.1440.835@0.23.1440.835" timestamp="1626260937274" />
+    <state x="544" y="224" width="828" height="618" key="find.popup/0.23.1440.835@0.23.1440.835" timestamp="1626279306282" />
     <state x="544" y="224" width="828" height="619" key="find.popup/0.23.1440.837@0.23.1440.837" timestamp="1618780474415" />
     <state x="544" y="224" width="828" height="619" key="find.popup/0.23.1440.838@0.23.1440.838" timestamp="1618736560135" />
     <state x="544" y="225" width="828" height="619" key="find.popup/0.23.1440.840@0.23.1440.840" timestamp="1618650727790" />
