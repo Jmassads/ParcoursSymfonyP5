@@ -4,6 +4,7 @@ session_start();
 /**
  * On importe les fichiers du dossier config
  */
+
 require_once "config/config.php";
 require_once "config/Securite.class.php";
 require_once 'config/Helper.php';
