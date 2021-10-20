@@ -19,17 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-
     <list default="true" id="3f72cef1-e66e-4ff1-9196-d67498625e98" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/inclureClasses.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_14_07_2021_13_04_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_14_07_2021_13_04__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/custom.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/custom.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/custom.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/adminComments.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminComments.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/front/error.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/error.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/backend/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/backend/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Model.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Model.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/front/blog.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/blog.view.php" afterDir="false" />
     </list>
-
-    <list default="true" id="3f72cef1-e66e-4ff1-9196-d67498625e98" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,11 +74,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/docs" />
       <recent name="$PROJECT_DIR$/src/img" />
       <recent name="$PROJECT_DIR$/controllers/backend" />
       <recent name="$PROJECT_DIR$/controllers/frontend" />
-      <recent name="$PROJECT_DIR$/views/front" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -136,6 +134,17 @@
       <workItem from="1626259960108" duration="85000" />
       <workItem from="1626260047900" duration="77000" />
       <workItem from="1626260126877" duration="391000" />
+      <workItem from="1626867778416" duration="365000" />
+      <workItem from="1626952220722" duration="20000" />
+      <workItem from="1634121208183" duration="6050000" />
+      <workItem from="1634157103726" duration="4585000" />
+      <workItem from="1634188213241" duration="459000" />
+      <workItem from="1634188695154" duration="668000" />
+      <workItem from="1634195146303" duration="1935000" />
+      <workItem from="1634208758336" duration="22000" />
+      <workItem from="1634208783246" duration="2058000" />
+      <workItem from="1634743057587" duration="37000" />
+      <workItem from="1634744017721" duration="182000" />
     </task>
     <servers />
   </component>
@@ -155,57 +164,27 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="616" y="182" key="#CLI_Interpreters" timestamp="1622977971016">
-      <screen x="0" y="23" width="1440" height="835" />
-    </state>
-    <state x="616" y="182" key="#CLI_Interpreters/0.23.1440.835@0.23.1440.835" timestamp="1622977971016" />
-    <state x="506" y="104" key="#PHP_CodeSniffer" timestamp="1622981245350">
-      <screen x="0" y="23" width="1440" height="835" />
-    </state>
-    <state x="506" y="104" key="#PHP_CodeSniffer/0.23.1440.835@0.23.1440.835" timestamp="1622981245350" />
     <state x="257" y="140" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625659245027">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="257" y="140" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.835@0.23.1440.835" timestamp="1625659245027" />
-    <state x="596" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1621413248951">
-      <screen x="0" y="23" width="1440" height="835" />
-    </state>
-    <state x="516" y="-954" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-279.-1057.1920.1057/0.23.1440.835@-279.-1057.1920.1057" timestamp="1620728535149" />
-    <state x="596" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.835@0.23.1440.835" timestamp="1621413248951" />
     <state x="591" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1625658984308">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="591" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.835@0.23.1440.835" timestamp="1625658984308" />
-    <state x="591" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.837@0.23.1440.837" timestamp="1618814032156" />
-    <state x="783" y="416" width="491" height="249" key="ComposerInitDialogKey" timestamp="1622980283590">
-      <screen x="0" y="23" width="1440" height="835" />
-    </state>
-    <state x="783" y="416" width="491" height="249" key="ComposerInitDialogKey/0.23.1440.835@0.23.1440.835" timestamp="1622980283590" />
     <state x="162" y="98" key="MergeDialog" timestamp="1626260698702">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="162" y="98" key="MergeDialog/0.23.1440.835@0.23.1440.835" timestamp="1626260698702" />
-    <state x="420" y="81" key="SettingsEditor" timestamp="1622981247112">
+    <state x="544" y="224" width="828" height="618" key="find.popup" timestamp="1634195977466">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
-    <state x="420" y="81" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1622981247112" />
-    <state x="544" y="224" width="828" height="618" key="find.popup" timestamp="1626279306282">
-      <screen x="0" y="23" width="1440" height="835" />
-    </state>
-    <state x="446" y="-813" width="1104" height="749" key="find.popup/-279.-1057.1920.1015/0.23.1440.877@-279.-1057.1920.1015" timestamp="1618667444982" />
-    <state x="446" y="-803" width="1104" height="779" key="find.popup/-279.-1057.1920.1057/0.23.1440.839@-279.-1057.1920.1057" timestamp="1618665392280" />
-    <state x="544" y="224" width="828" height="618" key="find.popup/0.23.1440.835@0.23.1440.835" timestamp="1626279306282" />
-    <state x="544" y="224" width="828" height="619" key="find.popup/0.23.1440.837@0.23.1440.837" timestamp="1618780474415" />
-    <state x="544" y="224" width="828" height="619" key="find.popup/0.23.1440.838@0.23.1440.838" timestamp="1618736560135" />
-    <state x="544" y="225" width="828" height="619" key="find.popup/0.23.1440.840@0.23.1440.840" timestamp="1618650727790" />
+    <state x="446" y="-803" width="1104" height="783" key="find.popup/-279.-1057.1920.1057/0.23.1440.835@-279.-1057.1920.1057" timestamp="1634122461942" />
+    <state x="544" y="224" width="828" height="618" key="find.popup/0.23.1440.835@0.23.1440.835" timestamp="1634195977466" />
     <state x="638" y="164" key="git4idea.branch.GitSmartOperationDialog" timestamp="1626260658058">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="638" y="164" key="git4idea.branch.GitSmartOperationDialog/0.23.1440.835@0.23.1440.835" timestamp="1626260658058" />
-    <state x="480" y="184" width="670" height="676" key="search.everywhere.popup" timestamp="1618764522842">
-      <screen x="0" y="23" width="1440" height="837" />
-    </state>
-    <state x="480" y="184" width="670" height="676" key="search.everywhere.popup/0.23.1440.837@0.23.1440.837" timestamp="1618764522842" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
