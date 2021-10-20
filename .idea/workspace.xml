@@ -20,25 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f72cef1-e66e-4ff1-9196-d67498625e98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/Helper.class.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/Helper.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/backend/Articles.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/backend/Articles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/backend/Categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/backend/Categories.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/backend/Comments.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/backend/Comments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/backend/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/backend/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/frontend/FrontAccueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/frontend/FrontAccueil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/frontend/FrontArticles.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/frontend/FrontArticles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/adminArticles.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminArticles.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/adminCategories.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminCategories.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/adminComment.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminComment.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/adminComments.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminComments.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/footerAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/footerAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/headerAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/headerAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/front/accueil.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/accueil.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/front/article.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/article.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/back/headerLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/headerLogin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +141,12 @@
       <workItem from="1634743057587" duration="37000" />
       <workItem from="1634744017721" duration="3863000" />
       <workItem from="1634755895669" duration="94000" />
-      <workItem from="1634755994763" duration="5326000" />
+      <workItem from="1634755994763" duration="6030000" />
+      <workItem from="1634762736035" duration="421000" />
+      <workItem from="1634764752051" duration="25000" />
+      <workItem from="1634764784870" duration="63000" />
+      <workItem from="1634764849701" duration="39000" />
+      <workItem from="1634765072838" duration="371000" />
     </task>
     <servers />
   </component>
