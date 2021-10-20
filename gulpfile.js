@@ -22,7 +22,7 @@ gulp.task("sassTask", function () {
 gulp.task('jsTask', function () {
     return gulp
         .src(path.src_js)
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(sourcemaps.write()) // Inline source maps.
         .pipe(gulp.dest('./public'))
