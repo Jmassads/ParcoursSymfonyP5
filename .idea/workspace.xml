@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f72cef1-e66e-4ff1-9196-d67498625e98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/front/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/footer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +142,7 @@
       <workItem from="1634743057587" duration="37000" />
       <workItem from="1634744017721" duration="3863000" />
       <workItem from="1634755895669" duration="94000" />
-      <workItem from="1634755994763" duration="204000" />
+      <workItem from="1634755994763" duration="2180000" />
     </task>
     <servers />
   </component>
@@ -162,23 +162,15 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="257" y="140" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625659245027">
-      <screen x="0" y="23" width="1440" height="835" />
-    </state>
-    <state x="257" y="140" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.835@0.23.1440.835" timestamp="1625659245027" />
-    <state x="591" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1625658984308">
-      <screen x="0" y="23" width="1440" height="835" />
-    </state>
-    <state x="591" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.835@0.23.1440.835" timestamp="1625658984308" />
     <state x="162" y="98" key="MergeDialog" timestamp="1626260698702">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="162" y="98" key="MergeDialog/0.23.1440.835@0.23.1440.835" timestamp="1626260698702" />
-    <state x="544" y="224" width="828" height="618" key="find.popup" timestamp="1634195977466">
+    <state x="544" y="224" width="828" height="618" key="find.popup" timestamp="1634757245703">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="446" y="-803" width="1104" height="783" key="find.popup/-279.-1057.1920.1057/0.23.1440.835@-279.-1057.1920.1057" timestamp="1634122461942" />
-    <state x="544" y="224" width="828" height="618" key="find.popup/0.23.1440.835@0.23.1440.835" timestamp="1634195977466" />
+    <state x="544" y="224" width="828" height="618" key="find.popup/0.23.1440.835@0.23.1440.835" timestamp="1634757245703" />
     <state x="638" y="164" key="git4idea.branch.GitSmartOperationDialog" timestamp="1626260658058">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
