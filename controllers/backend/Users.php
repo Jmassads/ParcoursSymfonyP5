@@ -91,10 +91,6 @@ class Users
             redirect('login');
         }
 
-        if ($_SESSION['acces'] == 'author') {
-
-        }
-
         require_once "views/back/adminAccueil.view.php";
     }
 
@@ -113,11 +109,6 @@ class Users
                     if ($this->userManager->insertUserIntoBD($firstname, $lastname, $email, $password, 2)) {
                         $_SESSION['acces'] = "author";
                         header('Location: ' . $_SESSION['previous']);
-
-                    } else {
-
-
-
                     }
                 }
 

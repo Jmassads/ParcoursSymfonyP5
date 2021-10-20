@@ -32,9 +32,9 @@
                                     Julia Assad
                                 </div>
                                 <div class="text-sm">
-                                    <?php if(empty($article->getDateModification())):?>
+                                    <?php if (empty($article->getDateModification())) :?>
                                         <?php echo date('d-m-Y', strtotime($article->getDateCreation())); ?>
-                                    <?php else:?>
+                                    <?php else :?>
                                         <?php echo date('d-m-Y', strtotime($article->getDateModification())); ?>
                                     <?php endif;?>
                                 </div>
