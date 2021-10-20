@@ -1,6 +1,6 @@
 'use strict';
 const gulp = require('gulp');
-const sourcemaps = require('gulp-sourcemaps');
+// const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 let uglify = require('gulp-uglify-es').default;
 
@@ -12,9 +12,9 @@ let path = {
 gulp.task("sassTask", function () {
     return gulp
         .src(path.src_sass)
-        .pipe(sourcemaps.init()) // initialize sourcemaps first
+        // .pipe(sourcemaps.init()) // initialize sourcemaps first
         .pipe(sass().on('error', sass.logError))
-        .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
+        // .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
         .pipe(gulp.dest('./public'))
 });
 
@@ -24,7 +24,7 @@ gulp.task('jsTask', function () {
         .src(path.src_js)
         // .pipe(sourcemaps.init())
         .pipe(uglify())
-        .pipe(sourcemaps.write()) // Inline source maps.
+        // .pipe(sourcemaps.write()) // Inline source maps.
         .pipe(gulp.dest('./public'))
 });
 
