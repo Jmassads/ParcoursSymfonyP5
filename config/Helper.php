@@ -3,7 +3,7 @@
 // Simple page redirect
 function redirect($page)
 {
-    header('location: ' . URL . '' .$page);
+    header('location: ' . URL . '' . $page);
 }
 
 function flash($name = '', $message = '', $class = 'px-4 py-4 text-japanese-laurel')
@@ -22,10 +22,7 @@ function flash($name = '', $message = '', $class = 'px-4 py-4 text-japanese-laur
 
             $_SESSION[$name] = $message;
             $_SESSION[$name . '_class'] = $class;
-        }
-        //Message exists, display it
-        // example flash('chapter_message')
-        elseif (empty($message) && !empty($_SESSION[$name])) {
+        } elseif (empty($message) && !empty($_SESSION[$name])) {
             $class = !empty($_SESSION[$name . '_class']) ? $_SESSION[$name . '_class'] : '';
             echo '<div class="' . $class . '" id="msg-flash">' . $_SESSION[$name] . '</div>';
             unset($_SESSION[$name]);

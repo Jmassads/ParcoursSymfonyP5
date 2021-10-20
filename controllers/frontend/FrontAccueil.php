@@ -66,8 +66,6 @@ class FrontAccueil
 
             } else {
                 require "views/front/accueil.view.php";
-
-
             }
 
         } else {
@@ -75,3 +73,4 @@ class FrontAccueil
         }
     }
 }
+

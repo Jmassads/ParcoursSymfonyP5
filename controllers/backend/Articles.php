@@ -45,11 +45,7 @@ class Articles
             if ($this->articleManager->insertArticleIntoBD($articleTitle, $articleExcerpt, $articleContent, $dateCreation, $category)) {
                 flash('article_message', "L'article a été ajouté");
                 redirect('admin/articles');
-
             } else {
-
-
-
             }
         }
         require "views/back/adminArticlesAjout.view.php";
@@ -72,10 +68,7 @@ class Articles
             if ($this->articleManager->updateArticleIntoBD($id, $articleTitle, $articleExcerpt, $articleContent, $dateModification, $category)) {
                 flash('article_message', "L'article a été modifié");
                 redirect('admin/articles');
-
             } else {
-
-
             }
         }
         require "views/back/adminArticleModif.view.php";
@@ -90,6 +83,5 @@ class Articles
         flash('article_message', "L'article a été supprimé");
         redirect('admin/articles');
     }
-
-
 }
+
