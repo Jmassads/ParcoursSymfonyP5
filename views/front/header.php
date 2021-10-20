@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>starter-2020</title>
     <link rel="shortcut icon" type="image/ico" href="<?php echo URL ?>public/favicon.ico">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="site.webmanifest">
 
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
