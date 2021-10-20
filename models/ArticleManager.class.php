@@ -36,7 +36,7 @@ class ArticleManager extends Model
     public function getArticleById($id)
     {
 
-        for ($i = 0; $i < $articles = count($this->articles); $i++) {
+        for ($i = 0, $count = count($this->articles); $i < $count; $i++) {
             if ($this->articles[$i]->getId() === $id) {
                 return $this->articles[$i];
             }
