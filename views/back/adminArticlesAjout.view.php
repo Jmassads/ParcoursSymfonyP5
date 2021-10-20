@@ -12,7 +12,7 @@
             <label class="form-label" for="articleCategory">Catégorie de l'article:</label>
             <select class="form-select" name="articleCategory" id="articleCategory">
                 <option selected>Catégorie...</option>
-                <?php foreach($categoriesArticle as $categorie):?>
+                <?php foreach ($categoriesArticle as $categorie) :?>
                     <option value="<?php echo $categorie['category_id'];?>"><?php echo $categorie['category_title'];?></option>
                 <?php endforeach;?>
             </select>
@@ -32,3 +32,4 @@
 
 </section>
 <?php include 'views/back/footerAdmin.php';?>
+

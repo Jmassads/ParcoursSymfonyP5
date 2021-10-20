@@ -1,6 +1,6 @@
 <?php include 'views/back/headerAdmin.php'; ?>
 
-<?php flash('category_message');?>
+<?php Helper::flash('category_message');?>
 
 <section class="px-4 py-4">
     <a class="btn btn-outline-blue" href="<?php echo URL; ?>admin/categories/ajouter">Ajouter une categorie</a>
