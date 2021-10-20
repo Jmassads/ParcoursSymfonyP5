@@ -43,8 +43,8 @@ class Articles
         ) {
             $_POST  = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
             if ($this->articleManager->insertArticleIntoBD($articleTitle, $articleExcerpt, $articleContent, $dateCreation, $category)) {
-                flash('article_message', "L'article a été ajouté");
-                redirect('admin/articles');
+                Helper::flash('article_message', "L'article a été ajouté");
+                helper::redirect('admin/articles');
             } else {
             }
         }
@@ -66,8 +66,8 @@ class Articles
 
         if (isset($_POST['submit'])) {
             if ($this->articleManager->updateArticleIntoBD($id, $articleTitle, $articleExcerpt, $articleContent, $dateModification, $category)) {
-                flash('article_message', "L'article a été modifié");
-                redirect('admin/articles');
+                Helper::flash('article_message', "L'article a été modifié");
+                helper::redirect('admin/articles');
             } else {
             }
         }
@@ -80,8 +80,8 @@ class Articles
     public function suppressionArticle($id)
     {
         $this->articleManager->suppressionArticleBD($id);
-        flash('article_message', "L'article a été supprimé");
-        redirect('admin/articles');
+        Helper::flash('article_message', "L'article a été supprimé");
+        helper::redirect('admin/articles');
     }
 }
 

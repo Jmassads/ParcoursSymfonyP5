@@ -1,6 +1,6 @@
 <?php include 'views/back/headerAdmin.php'; ?>
 
-<?php flash('comment_message');?>
+<?php Helper::flash('comment_message');?>
 
 <section class="px-4 py-4">
     <span class="visually-hidden comment_id"><?php echo $comment['commentaire_id'];?></span>

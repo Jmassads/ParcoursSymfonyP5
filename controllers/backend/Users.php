@@ -25,7 +25,7 @@ class Users
     {
 
         if (isset($_SESSION['acces']) && !empty($_SESSION['acces']) && $_SESSION['acces'] === "admin") {
-            redirect('admin');
+            helper::redirect('admin');
         }
 
         $data = [
@@ -43,7 +43,7 @@ class Users
                     if ($user['user_role'] == 1) {
                         $_SESSION['user_id'] = $user['user_id'];
                         $_SESSION['acces'] = "admin";
-                        redirect('admin');
+                        helper::redirect('admin');
                     }
 
                     if ($user['user_role'] == 2) {
@@ -52,7 +52,7 @@ class Users
                         if (!empty($_SESSION['previous'])) {
                             header('Location: ' . $_SESSION['previous']);
                         } else {
-                            redirect('blog');
+                            helper::redirect('blog');
                         }
 
                     }
@@ -76,7 +76,7 @@ class Users
     {
         if (isset($_POST['deconnexion']) && $_POST['deconnexion'] === "true") {
             session_destroy();
-            redirect('login');
+            helper::redirect('login');
         }
     }
 
@@ -88,7 +88,7 @@ class Users
         $numberArticles = $this->articleManager->countArticles();
         $numberComments = $this->CommentManager->countComments();
         if (!isset($_SESSION['acces'])) {
-            redirect('login');
+            helper::redirect('login');
         }
 
         require_once "views/back/adminAccueil.view.php";
@@ -128,7 +128,7 @@ class Users
     public function suppressionUser($id)
     {
         $this->userManager->suppressionUserBD($id);
-        redirect('admin/users');
+        helper::redirect('admin/users');
     }
 
 }

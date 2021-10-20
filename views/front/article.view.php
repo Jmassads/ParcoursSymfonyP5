@@ -1,6 +1,6 @@
 <?php include 'views/front/header.php'; ?>
 
-<?php flash('comment_message'); ?>
+<?php Helper::flash('comment_message'); ?>
 
     <!--    PAGE D'UN ARTICLE-->
     <main class="pt-4">

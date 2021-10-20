@@ -40,8 +40,8 @@ class Comments
     {
         $status = 1;
         if ($this->CommentManager->acceptComment($id, $status)) {
-            flash('comment_message', "Le commentaire a été accepté");
-            redirect('admin/commentaires');
+            Helper::flash('comment_message', "Le commentaire a été accepté");
+            helper::redirect('admin/commentaires');
         }
     }
 
@@ -51,8 +51,8 @@ class Comments
     public function suppressionCommentaire($id)
     {
         $this->CommentManager->suppressionCommentBD($id);
-        flash('comment_message', "Le commentaire a été supprimé");
-        redirect('admin/commentaires');
+        Helper::flash('comment_message', "Le commentaire a été supprimé");
+        helper::redirect('admin/commentaires');
     }
 
 }

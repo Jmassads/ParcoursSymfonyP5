@@ -35,8 +35,8 @@ class Categories
         if (isset($category) && !empty($category)) {
             $_POST  = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
             if ($this->categoryManager->insertCategoryIntoBD($category)) {
-                flash('category_message', "La cateégorie a été ajouté");
-                redirect('admin/categories');
+                Helper::flash('category_message', "La cateégorie a été ajouté");
+                helper::redirect('admin/categories');
 
             }
         }
@@ -53,8 +53,8 @@ class Categories
 
         if (isset($_POST['submit'])) {
             if ($this->categoryManager->updateCategoryIntoBD($id, $updatedCategory)) {
-                flash('category_message', "La catégorie a été modifié");
-                redirect('admin/categories');
+                Helper::flash('category_message', "La catégorie a été modifié");
+                helper::redirect('admin/categories');
 
             }
         }
@@ -64,7 +64,7 @@ class Categories
     public function suppressionCategory($id)
     {
         $this->categoryManager->suppressionCategoryBD($id);
-        flash('category_message', "La catégorie a été supprimée");
-        redirect('admin/categories');
+        Helper::flash('category_message', "La catégorie a été supprimée");
+        helper::redirect('admin/categories');
     }
 }

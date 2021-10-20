@@ -7,7 +7,7 @@ session_start();
 
 require_once "config/config.php";
 require_once "config/Securite.class.php";
-require_once 'config/Helper.php';
+require_once 'config/Helper.class.php';
 
 /**
  * On importe les fichiers du dossier controllers

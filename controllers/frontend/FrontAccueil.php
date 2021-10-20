@@ -56,10 +56,10 @@ class FrontAccueil
 
                 // mail($to,$subject,$message,$headers) – Il s’agit d’une fonction PHP qui exécute le mail.
                 if (mail($toEmail, $subject, $body, $header)) {
-                    flash('contact_message', 'Message envoyé');
+                    Helper::flash('contact_message', 'Message envoyé');
                     header('location: ' . URL . '#contact');
                 } else {
-                    flash('contact_message', "Votre message n'a pas été envoyé", 'alert alert-danger');
+                    Helper::flash('contact_message', "Votre message n'a pas été envoyé", 'alert alert-danger');
                     header('location: ' . URL . '#contact');
                 }
 

@@ -38,7 +38,7 @@ class FrontArticles
             $status = 0;
             $datePosted = date("Y-m-d H:i:s", time());
             $this->commentManager->insertCommentIntoBD($comment, $datePosted, $_SESSION['user_id'], $article_id, $status);
-            flash('comment_message', "Votre commentaire est en attente de validation");
+            Helper::flash('comment_message', "Votre commentaire est en attente de validation");
         }
 
         require "views/front/article.view.php";

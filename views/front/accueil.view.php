@@ -471,7 +471,7 @@
         </div>
     </section>
 
-<?php flash('contact_message'); ?>
+<?php Helper::flash('contact_message'); ?>
 
 <?php include 'views/front/footer.php'; ?>
 
