@@ -42,7 +42,6 @@ try {
          */
         $userController->logout();
         $accueilController->afficherPageAccueil();
-//        echo URL;
     } else {
         $url = explode("/", filter_var($_GET['page']), FILTER_SANITIZE_URL);
         switch ($url[0]) {

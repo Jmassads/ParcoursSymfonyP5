@@ -20,31 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f72cef1-e66e-4ff1-9196-d67498625e98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cahier_des_charges.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/back/adminUserModif.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cahier des charges P5.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/Securite.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/Securite.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/backend/Articles.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/backend/Articles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/backend/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/backend/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/frontend/FrontAccueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/frontend/FrontAccueil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/frontend/FrontArticles.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/frontend/FrontArticles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Article.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Article.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ArticleManager.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/ArticleManager.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/UsersManager.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/UsersManager.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/adminArticleModif.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminArticleModif.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/adminArticlesAjout.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminArticlesAjout.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/adminArticlesModif.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminArticlesModif.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/adminUsers.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/adminUsers.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/headerAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/headerAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/back/headerLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/back/headerLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/front/accueil.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/accueil.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/front/article.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/article.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/front/blog.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/blog.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/front/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/front/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/front/header.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +156,8 @@
       <workItem from="1635334755974" duration="4534000" />
       <workItem from="1635347470232" duration="786000" />
       <workItem from="1635360417874" duration="170000" />
-      <workItem from="1635360929628" duration="153000" />
+      <workItem from="1635360929628" duration="862000" />
+      <workItem from="1635362056626" duration="29000" />
     </task>
     <servers />
   </component>
