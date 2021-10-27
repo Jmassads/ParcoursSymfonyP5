@@ -9,30 +9,23 @@
                 <h2 class="text-4xl pr-4">
                     <?php echo $article->getTitre(); ?>
                 </h2>
-                <div class="text-lg border-l-4 border-tart-orange pl-4 text-tart-orange">
+                <div class="text-lg border-l-4 border-tart-orange pl-4 text-tart-orange pb-4">
                     <?php echo $article->getCategoryTitle(); ?>
                 </div>
             </div>
             <div class="my-10">
                 <?php echo $article->getContent(); ?>
             </div>
-            <div class="mt-3 d-flex items-center">
-                <div class="">
-                    <img class="w-10 rounded-circle"
-                         src="<?php echo URL ?>src/img/avatar.png"
-                         alt="">
+            <div class="mt-3">
+                <div class="text-sm" href="#">
+                    Posté par: <?php echo $article->getuserFirstname() . ' ' . $article->getuserLastname();?>
                 </div>
-                <div class="ms-3">
-                    <div class="text-sm" href="#">
-                        Julia Assad
-                    </div>
-                    <div class="text-sm">
-                        <?php if (empty($article->getDateModification())) : ?>
-                            <?php echo date('d-m-Y', strtotime($article->getDateCreation())); ?>
-                        <?php else : ?>
-                            <?php echo date('d-m-Y', strtotime($article->getDateModification())); ?>
-                        <?php endif; ?>
-                    </div>
+                <div class="text-sm">
+                    <?php if (empty($article->getDateModification())) :?>
+                        Le: <?php echo date('d-m-Y', strtotime($article->getDateCreation())); ?>
+                    <?php else :?>
+                        Le: <?php echo date('d-m-Y', strtotime($article->getDateModification())); ?>
+                    <?php endif;?>
                 </div>
             </div>
         </section>

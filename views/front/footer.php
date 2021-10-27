@@ -3,10 +3,23 @@
 <!--    FOOTER-->
 <footer class="footer bg-white px-4 border-top">
     <div class="row">
+        <?php if (isset($_SESSION['acces'])):?>
+            <div class="mt-4 d-flex">
+                <form action="" method="POST">
+                    <input type='hidden' name='deconnexion' value="true" />
+                    <input type="submit" href="#" class="btn border-1 border-gray rounded-md cursor-pointer" value="Déconnexion">
+                </form>
+                <?php if($_SESSION['acces'] == 'admin'):?>
+                <a class="btn border-1 border-gray ms-2" href="<?php echo URL ?>admin">Dashboard</a>
+                <?php endif;?>
+            </div>
+        <?php else:?>
+
         <div class="mt-4">
             <a href="<?php echo URL ?>login">Connexion</a>
-
         </div>
+        <?php endif;?>
+
     </div>
     <div class="mx-auto">
         <div class="d-flex flex-column items-center">

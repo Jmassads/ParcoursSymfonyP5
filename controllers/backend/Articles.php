@@ -26,32 +26,41 @@ class Articles
         require "views/back/adminArticles.view.php";
     }
 
+
     /**
      * On ajoute un article dans le BDD
      */
     public function ajoutArticle()
     {
+
         $categoriesArticle = $this->articleManager->getCategoriesArticle();
         $articleTitle = trim($_POST['articleTitle']);
         $articleExcerpt = trim($_POST['articleExcerpt']);
         $articleContent = trim($_POST['articleContent']);
         $category = $_POST['articleCategory'];
         $dateCreation = date("Y-m-d H:i:s", time());
-        if (isset($articleTitle) && !empty($articleTitle) &&
-            isset($articleExcerpt) && !empty($articleExcerpt) &&
-            isset($articleContent) && !empty($articleContent)
-        ) {
-            $_POST  = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
-            if ($this->articleManager->insertArticleIntoBD($articleTitle, $articleExcerpt, $articleContent, $dateCreation, $category)) {
-                Helper::flash('article_message', "L'article a été ajouté");
-                helper::redirect('admin/articles');
-            } else {
+        $userID = $_SESSION['user_id'];
+        if (isset($_POST['submit'])) {
+            if (isset($articleTitle) && !empty($articleTitle) &&
+                isset($articleExcerpt) && !empty($articleExcerpt) &&
+                isset($articleContent) && !empty($articleContent)
+            ) {
+
+
+                if ($this->articleManager->insertArticleIntoBD($articleTitle, $articleExcerpt, $articleContent, $dateCreation, $category, $userID)) {
+                    Helper::flash('article_message', "L'article a été ajouté");
+                    helper::redirect('admin/articles');
+                }
             }
         }
+
         require "views/back/adminArticlesAjout.view.php";
     }
 
+
     /**
+     * @param $id
+     * @throws Exception
      * On modifie un article dans le BDD
      */
     public function modificationArticle($id)
@@ -68,13 +77,13 @@ class Articles
             if ($this->articleManager->updateArticleIntoBD($id, $articleTitle, $articleExcerpt, $articleContent, $dateModification, $category)) {
                 Helper::flash('article_message', "L'article a été modifié");
                 helper::redirect('admin/articles');
-            } else {
             }
         }
         require "views/back/adminArticleModif.view.php";
     }
 
     /**
+     * @param $id
      * On supprime un article dans le BDD
      */
     public function suppressionArticle($id)
