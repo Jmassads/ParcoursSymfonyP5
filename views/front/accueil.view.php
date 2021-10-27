@@ -425,9 +425,6 @@
                             <li>Implémenter le schéma de données dans la base</li>
                             <li>Réaliser un schéma de conception de la base de données de l’application</li>
                         </ul>
-                        <a target="_blank" href="http://juliaassad.fr/projet3/"
-                           class="btn-tart-orange text-white px-4 py-2">Voir sur
-                            github</a>
                     </div>
                 </div>
             </div>
@@ -463,7 +460,7 @@
                                          rows=3><?php echo isset($message) ? $message : ''; ?></textarea>
                         </div>
                     </div>
-                    <button class="border-0 mt-4 btn-tart-orange text-white px-4 py-2" type="submit" name="submit">
+                    <button name="submitForm" class="border-0 mt-4 btn-tart-orange text-white px-4 py-2" type="submit" name="submit">
                         Envoyer
                     </button>
                 </form>

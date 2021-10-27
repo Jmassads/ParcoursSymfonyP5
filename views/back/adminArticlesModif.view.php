@@ -5,8 +5,8 @@
     <form action="" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="etape" value="2">
         <label for="categoryArticle">Catégorie : </label>
-        <select name="categoryArticle" id="categoryArticle" class="form-control" onchange="submit()">
-            <option selected>Catégorie...</option>
+        <select name="categoryArticle" id="categoryArticle" class="form-control" onchange="submit()" required>
+            <option value="">Catégories:</option>
             <?php foreach ($categoriesArticle as $categorie): ?>
                 <option value="<?php echo $categorie['category_id']; ?>"
                     <?php if (isset($_POST['categoryArticle']) && $_POST['categoryArticle'] === $categorie['category_id']) echo "selected"; ?>>

@@ -32,6 +32,7 @@ class FrontArticles
             header("Location: http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]");
         }
 
+        // <script>alert('hello world');</script>
         if (isset($_POST['sendcomment'])) {
             $comment = Securite::secureHTML($_POST['comment']);
             $article_id = Securite::secureHTML($_POST['article_id']);

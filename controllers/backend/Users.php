@@ -2,6 +2,9 @@
 
 require_once "models/UsersManager.class.php";
 
+/**
+ * Class Users
+ */
 class Users
 {
     /**
@@ -20,13 +23,15 @@ class Users
 
     /**
      * On vérifie le login et on fait une redirection vers l'admin ou le blog en fonction du role de l'utilisateur
+     * @throws Exception
      */
     public function getPageLogin()
     {
 
-        if (isset($_SESSION['acces']) && !empty($_SESSION['acces']) && $_SESSION['acces'] === "admin") {
+        if(Securite::verificationAccess()){
             helper::redirect('admin');
         }
+
 
         $data = [
             'email_err' => '',
@@ -43,6 +48,7 @@ class Users
                     if ($user['user_role'] == 1) {
                         $_SESSION['user_id'] = $user['user_id'];
                         $_SESSION['acces'] = "admin";
+                        Securite::genereCookiePassword();
                         helper::redirect('admin');
                     }
 
@@ -74,6 +80,7 @@ class Users
      */
     public function logout()
     {
+
         if (isset($_POST['deconnexion']) && $_POST['deconnexion'] === "true") {
             session_destroy();
             helper::redirect('login');
@@ -87,13 +94,18 @@ class Users
     {
         $numberArticles = $this->articleManager->countArticles();
         $numberComments = $this->CommentManager->countComments();
-        if (!isset($_SESSION['acces'])) {
-            helper::redirect('login');
+
+        if(Securite::verificationAccess()){
+            require_once "views/back/adminAccueil.view.php";
+        } else {
+            throw new Exception("Vous n'avez pas le droit d'accéder à cette page");
         }
 
-        require_once "views/back/adminAccueil.view.php";
     }
 
+    /**
+     *
+     */
     public function getPageInscription()
     {
         if (isset($_POST['submit']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -108,7 +120,7 @@ class Users
                 } else {
                     if ($this->userManager->insertUserIntoBD($firstname, $lastname, $email, $password, 2)) {
                         $_SESSION['acces'] = "author";
-                        header('Location: ' . $_SESSION['previous']);
+                        helper::redirect('login');
                     }
                 }
 
@@ -119,16 +131,45 @@ class Users
         require_once "views/back/inscription.view.php";
     }
 
+    /**
+     *
+     */
     public function afficherUtilisateurs()
     {
         $users = $this->userManager->getUsers();
         require_once "views/back/adminUsers.view.php";
     }
 
+    /**
+     * @param $id
+     */
+    public function modificationUser($id)
+    {
+        $userRoles = $this->userManager->getUserRoles();
+        $user = $this->userManager->getUserbyId($id);
+
+        $prenom = Securite::secureHTML($_POST['firstname']);
+        $nom = Securite::secureHTML($_POST['lastname']);
+        $role = $_POST['userRole'];
+
+        if (isset($_POST['submit'])) {
+
+            if ($this->userManager->updateUserIntoBD($id, $prenom, $nom, $role)) {
+                Helper::flash('user_message', "L'utilisateur a été modifié");
+                helper::redirect('admin/users');
+            }
+        }
+
+        require_once "views/back/adminUserModif.view.php";
+    }
+
+    /**
+     * @param $id
+     */
     public function suppressionUser($id)
     {
         $this->userManager->suppressionUserBD($id);
         helper::redirect('admin/users');
     }
-
 }
+

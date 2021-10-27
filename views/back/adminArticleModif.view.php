@@ -12,8 +12,8 @@
         </div>
         <div class="col-6 mb-4">
             <label class="form-label" for="categoryArticle">Catégorie de l'article:</label>
-            <select class="form-select" name="categoryArticle" id="categoryArticle">
-                <option selected>Catégorie...</option>
+            <select class="form-select" name="categoryArticle" id="categoryArticle" required>
+                <option value="">Catégories:</option>
                 <?php foreach ($categoriesArticle as $categorie) : ?>
                     <option value="<?php echo $categorie['category_id'] ?>"
                         <?php if ($article->getCategory() == $categorie['category_id']) echo "selected"; ?>>

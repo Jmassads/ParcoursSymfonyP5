@@ -1,5 +1,6 @@
 <?php include 'views/back/headerAdmin.php'; ?>
 
+<?php Helper::flash('user_message');?>
 
 <section class="px-4 py-4">
     <table class="table">
@@ -20,6 +21,7 @@
                 <td><?php echo $user['user_lastname'];?></td>
                 <td><?php echo $user['user_email'];?></td>
                 <td>
+                    <a href="<?= URL ?>admin/users/modificationUser/<?= $user['user_id']; ?>" class="btn btn-outline-info" >Modifier</a>
                     <a href="<?= URL ?>admin/users/suppressionUser/<?= $user['user_id']; ?>" class="btnSupUser btn btn-outline-tart-orange" >Supprimer</a>
                 </td>
             </tr>

@@ -30,6 +30,8 @@ $adminCommentController = new Comments();
 $adminCategoriesController = new Categories();
 $userController = new Users;
 
+
+
 /**
  * L'instruction try... catch regroupe des instructions à exécuter
  */
@@ -38,20 +40,21 @@ try {
         /**
          * On affiche la page d'accueil
          */
+        $userController->logout();
         $accueilController->afficherPageAccueil();
+//        echo URL;
     } else {
         $url = explode("/", filter_var($_GET['page']), FILTER_SANITIZE_URL);
-        // http://localhost:8888/blog/?page=accueil page accueil
-        // http://localhost:8888/blog/?page=blog page blog
-        // .htaccess rewrite rule : RewriteRule ^(.*)$ index.php?page=$1
         switch ($url[0]) {
             case "accueil":
                 /**
                  * On affiche la page d'accueil
                  */
+                $userController->logout();
                 $accueilController->afficherPageAccueil();
                 break;
             case "blog":
+                $userController->logout();
                 if (empty($url[1])) {
                     /**
                      * On affiche la page page des articles
@@ -144,6 +147,11 @@ try {
                          * On affiche les utilisateurs
                          */
                         $userController->afficherUtilisateurs();
+                    } elseif ($url[2] == "modificationUser") {
+                        /**
+                         * On supprime un utilisateur
+                         */
+                        $userController->modificationUser($url[3]);
                     } elseif ($url[2] == "suppressionUser") {
                         /**
                          * On supprime un utilisateur

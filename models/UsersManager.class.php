@@ -75,6 +75,50 @@ class UsersManager extends Model
         return $users;
     }
 
+    public function getUserbyId($id){
+        $req = "
+        SELECT * FROM Users
+        where user_id = :id
+      ";
+        $stmt = $this->getBdd()->prepare($req);
+        $stmt->bindValue(":id", $id, PDO::PARAM_INT);
+        $stmt->execute();
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+        $stmt->closeCursor();
+        return $user;
+    }
+
+    public function getUserRoles(){
+        $req = $this->getBdd()->prepare("
+        SELECT * FROM UserRole 
+      ");
+        $req->execute();
+        $userRoles = $req->fetchAll(PDO::FETCH_ASSOC);
+        $req->closeCursor();
+        return $userRoles;
+    }
+
+    public function updateUserIntoBD($userid, $prenom, $nom, $roleid){
+        $req = '
+    update users
+    set user_firstname = :prenom , user_lastname = :nom , user_role = :roleid
+    where user_id = :userid
+    ';
+        $stmt = $this->getBdd()->prepare($req);
+        $stmt->bindValue(":userid", $userid, PDO::PARAM_INT);
+        $stmt->bindValue(":prenom", $prenom, PDO::PARAM_STR);
+        $stmt->bindValue(":nom", $nom, PDO::PARAM_STR);
+        $stmt->bindValue(":roleid", $roleid, PDO::PARAM_INT);
+        $resultat = $stmt->execute();
+        $stmt->closeCursor();
+        if ($resultat > 0) {
+            return true;
+        }
+        {
+            return false;
+        }
+    }
+
     public function suppressionUserBD($id)
     {
         $req = "

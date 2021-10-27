@@ -1,5 +1,6 @@
 <?php
 
+
 class Article
 {
     private $id;
@@ -10,11 +11,11 @@ class Article
     private $dateModification;
     private $user;
     private $userFirstname;
+    private $category;
     private $categoryTitle;
-    private $userImage;
     private $userLastname;
 
-    public function __construct($id, $titre, $excerpt, $content, $dateCreation, $dateModification, $user, $category, $userFirstname, $userLastname, $categoryTitle, $userImage)
+    public function __construct($id, $titre, $excerpt, $content, $dateCreation, $dateModification, $category, $categoryTitle, $user, $userFirstname, $userLastname)
     {
         $this->id = $id;
         $this->titre = $titre;
@@ -25,9 +26,8 @@ class Article
         $this->user = $user;
         $this->userFirstname = $userFirstname;
         $this->userLastname = $userLastname;
-        $this->category = $category; //value numero
+        $this->category = $category;
         $this->categoryTitle = $categoryTitle;
-        $this->userImage = $userImage;
     }
 
     public function getId()

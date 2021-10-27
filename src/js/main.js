@@ -47,7 +47,7 @@ $(document).ready(function() {
         console.log($(this));
         var idComment = $('.comment_id').text();
         if (confirm("Voulez-vous supprimer le commentaire #" + idComment + "?")) {
-            document.location.href = "http://localhost:8888/blog/admin/commentaires/suppressionCommentaire/" + idComment;
+            document.location.href = "http://localhost:8888/blogp5/admin/commentaires/suppressionCommentaire/" + idComment;
         }
     });
 

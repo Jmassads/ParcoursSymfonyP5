@@ -8,7 +8,7 @@ class FrontAccueil
      */
     public function afficherPageAccueil()
     {
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        if (isset($_POST['submitForm'])) {
             $data = [
                 'name' => htmlspecialchars($_POST['name']),
                 'email' => htmlspecialchars($_POST['email']),
@@ -71,6 +71,8 @@ class FrontAccueil
         } else {
             require "views/front/accueil.view.php";
         }
+
+
     }
 }
 
