@@ -27,14 +27,14 @@ Les pages d’administration seront donc accessibles sur conditions et vous veil
 
 ------------
 
-##Installation
+## Installation
 
 Etape 1 : Cloner le Repositary
 
 Etape 2 : Créer une base de données et importer le fichier mon_site.sql
 
-Etape 3 : Remplir le fichier App/Config/config.exemple.php avec les accès à votre BDD.
+Etape 3 : Remplir les accès à votre BDD dans le dossier config -> fichier config.php
 
-Etape 4 : Remplir le fichier config.config.php avec les accès à votre compte email.
+Etape 4 : Pour modifier le CSS ou JS, utilisez la commande npm install dans votre terminal. Ensuite, vous pouvez utiliser la commande gulp dans le terminal (tous les fichiers CSS et JS modifiés dans le dossier src seront compilés dans le dossier public)
  
 
